@@ -17,9 +17,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self initBeginView];
+}
+
+- (void)initBeginView {
     UIImage *bgImage = [UIImage imageNamed:@"LeftMenuBG"];
     self.view.layer.contents = (id) bgImage.CGImage;
     [self.navigationController setNavigationBarHidden:YES];
+    
+    
+    [self curtainRevealViewFromView:[self createDoorViewWithBGImageName:@"MainMenuBG" andDoorknobImageName:@"doorknob"]
+                  ToDestinationView:self.view
+                   andLogoImageView:[self createDoorViewWithBGImageName:@"MainMenuBG" andDoorknobImageName:@"findDoorKnob"]
+                    transitionStyle:SPCurtainTransitionHorizontal];
 }
 
 - (void)didReceiveMemoryWarning {
