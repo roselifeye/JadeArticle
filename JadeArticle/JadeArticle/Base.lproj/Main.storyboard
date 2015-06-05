@@ -280,6 +280,7 @@
                             <constraint firstAttribute="centerX" secondItem="klV-Bz-zOW" secondAttribute="centerX" id="uwe-pp-RKa"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M07-D4-jP6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

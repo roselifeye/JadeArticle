@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SPFindViewController : UIViewController
+@interface SPFindViewController : SPBaseViewController
 
 @end

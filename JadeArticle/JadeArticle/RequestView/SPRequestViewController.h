@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SPRequestViewController : UIViewController
+@interface SPRequestViewController : SPBaseViewController
 
 @end

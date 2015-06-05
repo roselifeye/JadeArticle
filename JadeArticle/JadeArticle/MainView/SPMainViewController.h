@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "RESideMenu.h"
 
-@interface SPMainViewController : SPBaseViewController
+@interface SPMainViewController : UIViewController
 
 @end

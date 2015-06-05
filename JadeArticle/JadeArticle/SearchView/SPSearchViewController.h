@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SPSearchViewController : UIViewController
+@interface SPSearchViewController : SPBaseViewController
 
 @end

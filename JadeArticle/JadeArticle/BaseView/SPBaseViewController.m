@@ -17,6 +17,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    UIButton *backBtn = [[UIButton alloc] initWithFrame:CGRectMake(15, 20, 45, 45)];
+    [backBtn setBackgroundImage:[UIImage imageNamed:@"backBtn"] forState:UIControlStateNormal];
+    [backBtn addTarget:self action:@selector(goBack) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:backBtn];
+}
+
+- (void)goBack {
+    [self curtainCloseViewFromView:[self createDoorViewWithBGImageName:@"MainMenuBG" andDoorknobImageName:@"doorknob"]
+                 ToDestinationView:self.view
+                   transitionStyle:SPCurtainTransitionHorizontal
+                       andEndBlock:^{
+                           [self.navigationController popViewControllerAnimated:NO];
+                       }];
 }
 
 - (void)didReceiveMemoryWarning {

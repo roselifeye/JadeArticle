@@ -82,6 +82,7 @@
 		5BAB35F71B1C9896005634D1 /* JadeArticleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JadeArticleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BAB35FC1B1C9896005634D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BAB35FD1B1C9896005634D1 /* JadeArticleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JadeArticleTests.m; sourceTree = "<group>"; };
+		5BAC57FA1B21FEC9008A45F2 /* SPBlockTypeDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPBlockTypeDef.h; sourceTree = "<group>"; };
 		AB8B6960F58514B82043408E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -220,6 +221,7 @@
 		5BAB35E01B1C9896005634D1 /* JadeArticle */ = {
 			isa = PBXGroup;
 			children = (
+				5BAC57FA1B21FEC9008A45F2 /* SPBlockTypeDef.h */,
 				5B57801A1B213DF6006B391D /* Additions */,
 				5B33C8E71B20D65D00CF28BE /* CustomNavigationItem */,
 				5B33C8E31B20CC6900CF28BE /* DSNavigationBar */,

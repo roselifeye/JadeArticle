@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SPFoundViewController : UIViewController
+@interface SPFoundViewController : SPBaseViewController
 
 @end

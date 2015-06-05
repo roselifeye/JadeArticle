@@ -35,6 +35,6 @@ typedef enum _SPCurtainTransitionStyle {
  */
 - (void)curtainRevealViewFromView:(UIView *)fromView ToDestinationView:(UIView *)toView andLogoImageView:(UIView *)LogoImageView transitionStyle:(SPCurtainTransitionStyle)transitionStyle;
 
-- (void)curtainCloseViewFromView:(UIView *)fromView ToDestinationView:(UIView *)toView transitionStyle:(SPCurtainTransitionStyle)transitionStyle;
+- (void)curtainCloseViewFromView:(UIView *)fromView ToDestinationView:(UIView *)toView transitionStyle:(SPCurtainTransitionStyle)transitionStyle andEndBlock:(SPBlock)endBlock;
 
 @end

@@ -100,7 +100,66 @@
     }];
 }
 
-- (void)curtainCloseViewFromView:(UIView *)fromView ToDestinationView:(UIView *)toView transitionStyle:(SPCurtainTransitionStyle)transitionStyle {
+- (void)curtainCloseViewFromView:(UIView *)fromView ToDestinationView:(UIView *)toView transitionStyle:(SPCurtainTransitionStyle)transitionStyle andEndBlock:(SPBlock)endBlock {
+    UIImage *selfPortrait = [self imageWithView:fromView];
+    UIImage *controllerScreenshot = [self imageWithView:toView];
+    
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    UIView *coverView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, selfPortrait.size.width, selfPortrait.size.height)];
+    coverView.backgroundColor = [UIColor blackColor];
+    [window addSubview:coverView];
+    
+    UIImageView *fadedView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, controllerScreenshot.size.width, controllerScreenshot.size.height)];
+    fadedView.image = controllerScreenshot;
+    fadedView.alpha = 0.5f;
+    [coverView addSubview:fadedView];
+    
+    UIImageView *leftCurtain = [[UIImageView alloc] initWithFrame:CGRectNull];
+    leftCurtain.image = selfPortrait;
+    leftCurtain.clipsToBounds = YES;
+    
+    UIImageView *rightCurtain = [[UIImageView alloc] initWithFrame:CGRectNull];
+    rightCurtain.image = selfPortrait;
+    rightCurtain.clipsToBounds = YES;
+    
+    if (transitionStyle == SPCurtainTransitionHorizontal) {
+        leftCurtain.contentMode = UIViewContentModeLeft;
+        leftCurtain.frame = CGRectMake(- selfPortrait.size.width / 2, 0, selfPortrait.size.width / 2, selfPortrait.size.height);
+        rightCurtain.contentMode = UIViewContentModeRight;
+        rightCurtain.frame = CGRectMake(selfPortrait.size.width, 0, selfPortrait.size.width / 2, selfPortrait.size.height);
+    } else {
+        leftCurtain.contentMode = UIViewContentModeTop;
+        leftCurtain.frame = CGRectMake(0, - selfPortrait.size.height / 2, selfPortrait.size.width, selfPortrait.size.height / 2);
+        rightCurtain.contentMode = UIViewContentModeBottom;
+        rightCurtain.frame = CGRectMake(0, selfPortrait.size.height, selfPortrait.size.width, selfPortrait.size.height / 2);
+    }
+    
+    [coverView addSubview:leftCurtain];
+    [coverView addSubview:rightCurtain];
+    
+    
+    [UIView animateWithDuration:0.8f delay:0.f options:UIViewAnimationOptionCurveEaseIn animations:^{
+        if (transitionStyle == SPCurtainTransitionHorizontal) {
+            leftCurtain.frame = CGRectMake(0, 0, selfPortrait.size.width / 2, selfPortrait.size.height);
+            rightCurtain.frame = CGRectMake(selfPortrait.size.width / 2, 0, selfPortrait.size.width / 2, selfPortrait.size.height);
+        } else {
+            leftCurtain.frame = CGRectMake(0, 0, selfPortrait.size.width, selfPortrait.size.height / 2);
+            rightCurtain.frame = CGRectMake(0, selfPortrait.size.height / 2, selfPortrait.size.width, selfPortrait.size.height / 2);
+        }
+    } completion:nil];
+    
+    [UIView animateWithDuration:0.3 delay:0.6f options:UIViewAnimationOptionCurveEaseIn animations:^{
+        fadedView.frame = CGRectMake(0, 0, controllerScreenshot.size.width, controllerScreenshot.size.height);
+        fadedView.alpha = 1;
+    } completion:^(BOOL finished){
+        [leftCurtain removeFromSuperview];
+        [rightCurtain removeFromSuperview];
+        [fadedView removeFromSuperview];
+        [coverView removeFromSuperview];
+        if (endBlock) {
+            endBlock();
+        }
+    }];
 
 }
 
