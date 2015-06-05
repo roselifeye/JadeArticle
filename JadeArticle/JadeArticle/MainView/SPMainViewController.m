@@ -9,6 +9,12 @@
 #import "SPMainViewController.h"
 #import "CustomBarItem.h"
 
+#import "SPRequestViewController.h"
+#import "SPSearchViewController.h"
+#import "SPReadViewController.h"
+#import "SPFindViewController.h"
+#import "SPFoundViewController.h"
+
 @interface SPMainViewController () {
 }
 
@@ -31,18 +37,28 @@
 - (IBAction)menuBtnSelecter:(UIButton *)button {
     switch (button.tag) {
         case 0: {
+            SPRequestViewController *requestView = [self.storyboard instantiateViewControllerWithIdentifier:@"requestView"];
+            [self.navigationController pushViewController:requestView animated:NO];
         }
             break;
         case 1: {
+            SPSearchViewController *searchView = [self.storyboard instantiateViewControllerWithIdentifier:@"searchView"];
+            [self.navigationController pushViewController:searchView animated:NO];
         }
             break;
         case 2: {
+            SPReadViewController *readView = [self.storyboard instantiateViewControllerWithIdentifier:@"readView"];
+            [self.navigationController pushViewController:readView animated:NO];
         }
             break;
         case 3: {
+            SPFindViewController *findView = [self.storyboard instantiateViewControllerWithIdentifier:@"findView"];
+            [self.navigationController pushViewController:findView animated:NO];
         }
             break;
         case 4: {
+            SPFoundViewController *foundView = [self.storyboard instantiateViewControllerWithIdentifier:@"foundView"];
+            [self.navigationController pushViewController:foundView animated:NO];
         }
             break;
         default:

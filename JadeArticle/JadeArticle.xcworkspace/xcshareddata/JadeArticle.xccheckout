@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B8ECFEEF-FF82-4513-99E6-3378E8DEC209</string>
+	<key>IDESourceControlProjectName</key>
+	<string>JadeArticle</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E67CF73C2ACBA4ADC62A1AD60F9BDAC30648E0CA</key>
+		<string>https://github.com/roselifeye/JadeArticle.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>JadeArticle/JadeArticle.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E67CF73C2ACBA4ADC62A1AD60F9BDAC30648E0CA</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/roselifeye/JadeArticle.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E67CF73C2ACBA4ADC62A1AD60F9BDAC30648E0CA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E67CF73C2ACBA4ADC62A1AD60F9BDAC30648E0CA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>%E7%8E%A9%E7%9F%B3%E7%BF%A1%E7%BF%A0</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,31 +1,22 @@
 //
-//  SPRequestViewController.m
+//  SPBaseViewController.m
 //  JadeArticle
 //
 //  Created by Roselifeye on 15/6/4.
 //  Copyright (c) 2015年 Roselifeye. All rights reserved.
 //
 
-#import "SPRequestViewController.h"
+#import "SPBaseViewController.h"
 
-@interface SPRequestViewController ()
+@interface SPBaseViewController ()
 
 @end
 
-@implementation SPRequestViewController
+@implementation SPBaseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    UIImage *bgImage = [UIImage imageNamed:@"LeftMenuBG"];
-    self.view.layer.contents = (id) bgImage.CGImage;
-    [self.navigationController setNavigationBarHidden:YES];
-    
-
-    [self curtainRevealViewFromView:[self createDoorViewWithBGImageName:@"MainMenuBG" andDoorknobImageName:@"doorknob"]
-                  ToDestinationView:self.view
-                   andLogoImageView:[self createDoorViewWithBGImageName:@"MainMenuBG" andDoorknobImageName:@"requestDoorKnob"]
-                    transitionStyle:SPCurtainTransitionHorizontal];
 }
 
 - (void)didReceiveMemoryWarning {

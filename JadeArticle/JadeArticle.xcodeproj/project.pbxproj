@@ -16,6 +16,11 @@
 		5B36B9E61B20DA2400990359 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B36B9E51B20DA2400990359 /* QuartzCore.framework */; };
 		5B4399041B20FD56004BA36F /* SPRequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B4399031B20FD56004BA36F /* SPRequestViewController.m */; };
 		5B4399081B2128BD004BA36F /* SPSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B4399071B2128BD004BA36F /* SPSearchViewController.m */; };
+		5B57800D1B2135B2006B391D /* SPReadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B57800C1B2135B2006B391D /* SPReadViewController.m */; };
+		5B5780111B2136F7006B391D /* SPFindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5780101B2136F7006B391D /* SPFindViewController.m */; };
+		5B5780151B21371E006B391D /* SPFoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5780141B21371E006B391D /* SPFoundViewController.m */; };
+		5B5780191B2137DC006B391D /* SPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5780181B2137DC006B391D /* SPBaseViewController.m */; };
+		5B57801D1B213E36006B391D /* UIViewController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B57801C1B213E36006B391D /* UIViewController+Additions.m */; };
 		5BAB35E41B1C9896005634D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB35E31B1C9896005634D1 /* main.m */; };
 		5BAB35E71B1C9896005634D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB35E61B1C9896005634D1 /* AppDelegate.m */; };
 		5BAB35EA1B1C9896005634D1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB35E91B1C9896005634D1 /* ViewController.m */; };
@@ -54,6 +59,16 @@
 		5B4399031B20FD56004BA36F /* SPRequestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPRequestViewController.m; path = RequestView/SPRequestViewController.m; sourceTree = "<group>"; };
 		5B4399061B2128BD004BA36F /* SPSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPSearchViewController.h; path = SearchView/SPSearchViewController.h; sourceTree = "<group>"; };
 		5B4399071B2128BD004BA36F /* SPSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPSearchViewController.m; path = SearchView/SPSearchViewController.m; sourceTree = "<group>"; };
+		5B57800B1B2135B2006B391D /* SPReadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPReadViewController.h; path = ReadView/SPReadViewController.h; sourceTree = "<group>"; };
+		5B57800C1B2135B2006B391D /* SPReadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPReadViewController.m; path = ReadView/SPReadViewController.m; sourceTree = "<group>"; };
+		5B57800F1B2136F7006B391D /* SPFindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPFindViewController.h; path = FindView/SPFindViewController.h; sourceTree = "<group>"; };
+		5B5780101B2136F7006B391D /* SPFindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPFindViewController.m; path = FindView/SPFindViewController.m; sourceTree = "<group>"; };
+		5B5780131B21371E006B391D /* SPFoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPFoundViewController.h; path = FoundView/SPFoundViewController.h; sourceTree = "<group>"; };
+		5B5780141B21371E006B391D /* SPFoundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPFoundViewController.m; path = FoundView/SPFoundViewController.m; sourceTree = "<group>"; };
+		5B5780171B2137DC006B391D /* SPBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPBaseViewController.h; path = BaseView/SPBaseViewController.h; sourceTree = "<group>"; };
+		5B5780181B2137DC006B391D /* SPBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPBaseViewController.m; path = BaseView/SPBaseViewController.m; sourceTree = "<group>"; };
+		5B57801B1B213E36006B391D /* UIViewController+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Additions.h"; path = "Additions/UIViewController+Additions.h"; sourceTree = "<group>"; };
+		5B57801C1B213E36006B391D /* UIViewController+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Additions.m"; path = "Additions/UIViewController+Additions.m"; sourceTree = "<group>"; };
 		5BAB35DE1B1C9896005634D1 /* JadeArticle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JadeArticle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BAB35E21B1C9896005634D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BAB35E31B1C9896005634D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -137,6 +152,51 @@
 			name = SearchView;
 			sourceTree = "<group>";
 		};
+		5B57800A1B213579006B391D /* ReadView */ = {
+			isa = PBXGroup;
+			children = (
+				5B57800B1B2135B2006B391D /* SPReadViewController.h */,
+				5B57800C1B2135B2006B391D /* SPReadViewController.m */,
+			);
+			name = ReadView;
+			sourceTree = "<group>";
+		};
+		5B57800E1B2136D8006B391D /* FindView */ = {
+			isa = PBXGroup;
+			children = (
+				5B57800F1B2136F7006B391D /* SPFindViewController.h */,
+				5B5780101B2136F7006B391D /* SPFindViewController.m */,
+			);
+			name = FindView;
+			sourceTree = "<group>";
+		};
+		5B5780121B213702006B391D /* FoundView */ = {
+			isa = PBXGroup;
+			children = (
+				5B5780131B21371E006B391D /* SPFoundViewController.h */,
+				5B5780141B21371E006B391D /* SPFoundViewController.m */,
+			);
+			name = FoundView;
+			sourceTree = "<group>";
+		};
+		5B5780161B2137C5006B391D /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				5B5780171B2137DC006B391D /* SPBaseViewController.h */,
+				5B5780181B2137DC006B391D /* SPBaseViewController.m */,
+			);
+			name = BaseView;
+			sourceTree = "<group>";
+		};
+		5B57801A1B213DF6006B391D /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				5B57801B1B213E36006B391D /* UIViewController+Additions.h */,
+				5B57801C1B213E36006B391D /* UIViewController+Additions.m */,
+			);
+			name = Additions;
+			sourceTree = "<group>";
+		};
 		5BAB35D51B1C9896005634D1 = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +220,7 @@
 		5BAB35E01B1C9896005634D1 /* JadeArticle */ = {
 			isa = PBXGroup;
 			children = (
+				5B57801A1B213DF6006B391D /* Additions */,
 				5B33C8E71B20D65D00CF28BE /* CustomNavigationItem */,
 				5B33C8E31B20CC6900CF28BE /* DSNavigationBar */,
 				5BAB35E51B1C9896005634D1 /* AppDelegate.h */,
@@ -168,9 +229,13 @@
 				5BAB35E91B1C9896005634D1 /* ViewController.m */,
 				5B33C8DF1B20BE5000CF28BE /* SPLeftMenuViewController.h */,
 				5B33C8E01B20BE5000CF28BE /* SPLeftMenuViewController.m */,
+				5B5780161B2137C5006B391D /* BaseView */,
 				5B36B9E71B20DBBC00990359 /* MainMenu */,
 				5B4399011B20FC89004BA36F /* RequetView */,
 				5B4399051B2128A5004BA36F /* SearchView */,
+				5B57800A1B213579006B391D /* ReadView */,
+				5B57800E1B2136D8006B391D /* FindView */,
+				5B5780121B213702006B391D /* FoundView */,
 				5BAB35EB1B1C9896005634D1 /* Main.storyboard */,
 				5BAB35EE1B1C9896005634D1 /* Images.xcassets */,
 				5BAB35F01B1C9896005634D1 /* LaunchScreen.xib */,
@@ -359,14 +424,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B5780111B2136F7006B391D /* SPFindViewController.m in Sources */,
 				5B4399041B20FD56004BA36F /* SPRequestViewController.m in Sources */,
 				5B33C8E61B20CC6900CF28BE /* DSNavigationBar.m in Sources */,
 				5B33C8DE1B20BE1700CF28BE /* SPMainViewController.m in Sources */,
+				5B5780191B2137DC006B391D /* SPBaseViewController.m in Sources */,
 				5B33C8ED1B20D65D00CF28BE /* UINavigationItem+CustomItem.m in Sources */,
 				5BAB35EA1B1C9896005634D1 /* ViewController.m in Sources */,
 				5B33C8E11B20BE5000CF28BE /* SPLeftMenuViewController.m in Sources */,
+				5B5780151B21371E006B391D /* SPFoundViewController.m in Sources */,
+				5B57801D1B213E36006B391D /* UIViewController+Additions.m in Sources */,
 				5BAB35E71B1C9896005634D1 /* AppDelegate.m in Sources */,
 				5B4399081B2128BD004BA36F /* SPSearchViewController.m in Sources */,
+				5B57800D1B2135B2006B391D /* SPReadViewController.m in Sources */,
 				5B33C8EC1B20D65D00CF28BE /* CustomBarItem.m in Sources */,
 				5BAB35E41B1C9896005634D1 /* main.m in Sources */,
 			);

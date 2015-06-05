@@ -154,6 +154,60 @@
             </objects>
             <point key="canvasLocation" x="2447" y="-91"/>
         </scene>
+        <!--Read View Controller-->
+        <scene sceneID="zIZ-An-rAW">
+            <objects>
+                <viewController storyboardIdentifier="readView" id="hq2-VY-XfO" customClass="SPReadViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KsW-xL-bmD"/>
+                        <viewControllerLayoutGuide type="bottom" id="Eft-F8-U9e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QUp-dC-vJh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M07-D4-jP6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2447" y="655"/>
+        </scene>
+        <!--Find View Controller-->
+        <scene sceneID="91V-ob-Bwb">
+            <objects>
+                <viewController storyboardIdentifier="findView" id="fzG-90-oKL" customClass="SPFindViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Oxj-ZH-AsY"/>
+                        <viewControllerLayoutGuide type="bottom" id="PQW-qY-8l6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gvx-ZU-6Dk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fUe-7h-dgV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2447" y="1367"/>
+        </scene>
+        <!--Found View Controller-->
+        <scene sceneID="jke-3G-sNZ">
+            <objects>
+                <viewController storyboardIdentifier="foundView" id="lH9-LZ-kay" customClass="SPFoundViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rNQ-LO-kDY"/>
+                        <viewControllerLayoutGuide type="bottom" id="uxV-HT-xVW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Z0f-ww-BY1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rCg-5h-EcR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2447" y="2081"/>
+        </scene>
         <!--Main View Controller-->
         <scene sceneID="WxR-wk-NKH">
             <objects>
@@ -179,7 +233,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="S9a-CU-Kbb" kind="show" identifier="requestViewSegue" id="uND-uG-9Mc"/>
+                                            <action selector="menuBtnSelecter:" destination="siz-hR-ouq" eventType="touchUpInside" id="QLm-uF-Rgr"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPU-yD-Fzg">
@@ -192,7 +246,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="8ij-Pn-ZMv" kind="show" identifier="searchViewSegue" id="p7n-HP-lZ5"/>
+                                            <action selector="menuBtnSelecter:" destination="siz-hR-ouq" eventType="touchUpInside" id="I7S-vK-qXu"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -217,6 +271,9 @@
                                         <state key="normal" backgroundImage="03ReadBtn">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="menuBtnSelecter:" destination="siz-hR-ouq" eventType="touchUpInside" id="jLI-36-AZJ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Wy-pe-50H">
                                         <rect key="frame" x="450" y="40" width="150" height="150"/>
@@ -227,6 +284,9 @@
                                         <state key="normal" backgroundImage="04FindBtn">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="menuBtnSelecter:" destination="siz-hR-ouq" eventType="touchUpInside" id="04e-8u-r65"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -250,6 +310,9 @@
                                         <state key="normal" backgroundImage="05FoundBtn">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="menuBtnSelecter:" destination="siz-hR-ouq" eventType="touchUpInside" id="lq1-BL-SIS"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -294,6 +357,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="N53-OQ-bkV"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <segue destination="S9a-CU-Kbb" kind="custom" identifier="requestSegue" id="QBb-4C-cxN"/>
+                        <segue destination="8ij-Pn-ZMv" kind="custom" identifier="searchSegue" id="bWz-hZ-AFS"/>
+                        <segue destination="hq2-VY-XfO" kind="custom" identifier="readSegue" id="C9X-7R-N9W"/>
+                        <segue destination="fzG-90-oKL" kind="custom" identifier="findSegue" id="3d4-hR-gQM"/>
+                        <segue destination="lH9-LZ-kay" kind="custom" identifier="foundSegue" id="xqJ-8K-fkr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="akF-kO-ipa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -312,6 +382,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="uPx-x4-YeW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jJM-pj-eKY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

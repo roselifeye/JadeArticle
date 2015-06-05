@@ -20,6 +20,9 @@
 #import <Foundation/Foundation.h>
 #import <QuartzCore/QuartzCore.h>
 
+#import "SPBaseViewController.h"
+
 #import "UINavigationItem+CustomItem.h"
+#import "UIViewController+Additions.h"
 
 #endif

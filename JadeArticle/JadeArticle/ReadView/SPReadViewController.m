@@ -1,18 +1,18 @@
 //
-//  SPRequestViewController.m
+//  SPReadViewController.m
 //  JadeArticle
 //
 //  Created by Roselifeye on 15/6/4.
 //  Copyright (c) 2015年 Roselifeye. All rights reserved.
 //
 
-#import "SPRequestViewController.h"
+#import "SPReadViewController.h"
 
-@interface SPRequestViewController ()
+@interface SPReadViewController ()
 
 @end
 
-@implementation SPRequestViewController
+@implementation SPReadViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -20,12 +20,6 @@
     UIImage *bgImage = [UIImage imageNamed:@"LeftMenuBG"];
     self.view.layer.contents = (id) bgImage.CGImage;
     [self.navigationController setNavigationBarHidden:YES];
-    
-
-    [self curtainRevealViewFromView:[self createDoorViewWithBGImageName:@"MainMenuBG" andDoorknobImageName:@"doorknob"]
-                  ToDestinationView:self.view
-                   andLogoImageView:[self createDoorViewWithBGImageName:@"MainMenuBG" andDoorknobImageName:@"requestDoorKnob"]
-                    transitionStyle:SPCurtainTransitionHorizontal];
 }
 
 - (void)didReceiveMemoryWarning {

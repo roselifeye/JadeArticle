@@ -1,5 +1,5 @@
 //
-//  SPMainViewController.h
+//  SPBaseViewController.h
 //  JadeArticle
 //
 //  Created by Roselifeye on 15/6/4.
@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "RESideMenu.h"
 
-@interface SPMainViewController : SPBaseViewController
+@interface SPBaseViewController : UIViewController
 
 @end
