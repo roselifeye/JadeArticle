@@ -28,6 +28,9 @@
 		5BAB35EF1B1C9896005634D1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BAB35EE1B1C9896005634D1 /* Images.xcassets */; };
 		5BAB35F21B1C9896005634D1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BAB35F01B1C9896005634D1 /* LaunchScreen.xib */; };
 		5BAB35FE1B1C9896005634D1 /* JadeArticleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB35FD1B1C9896005634D1 /* JadeArticleTests.m */; };
+		5BAC57FD1B220206008A45F2 /* SPReadDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAC57FC1B220206008A45F2 /* SPReadDetailViewController.m */; };
+		5BAC58001B2270F9008A45F2 /* SPCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAC57FF1B2270F9008A45F2 /* SPCameraViewController.m */; };
+		5BAC58031B227415008A45F2 /* SPCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAC58021B227415008A45F2 /* SPCameraView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +86,12 @@
 		5BAB35FC1B1C9896005634D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BAB35FD1B1C9896005634D1 /* JadeArticleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JadeArticleTests.m; sourceTree = "<group>"; };
 		5BAC57FA1B21FEC9008A45F2 /* SPBlockTypeDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPBlockTypeDef.h; sourceTree = "<group>"; };
+		5BAC57FB1B220206008A45F2 /* SPReadDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPReadDetailViewController.h; path = ReadView/SPReadDetailViewController.h; sourceTree = "<group>"; };
+		5BAC57FC1B220206008A45F2 /* SPReadDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPReadDetailViewController.m; path = ReadView/SPReadDetailViewController.m; sourceTree = "<group>"; };
+		5BAC57FE1B2270F9008A45F2 /* SPCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPCameraViewController.h; path = RequestView/SPCameraViewController.h; sourceTree = "<group>"; };
+		5BAC57FF1B2270F9008A45F2 /* SPCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPCameraViewController.m; path = RequestView/SPCameraViewController.m; sourceTree = "<group>"; };
+		5BAC58011B227415008A45F2 /* SPCameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPCameraView.h; path = RequestView/SPCameraView.h; sourceTree = "<group>"; };
+		5BAC58021B227415008A45F2 /* SPCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPCameraView.m; path = RequestView/SPCameraView.m; sourceTree = "<group>"; };
 		AB8B6960F58514B82043408E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,6 +149,10 @@
 			children = (
 				5B4399021B20FD56004BA36F /* SPRequestViewController.h */,
 				5B4399031B20FD56004BA36F /* SPRequestViewController.m */,
+				5BAC58011B227415008A45F2 /* SPCameraView.h */,
+				5BAC58021B227415008A45F2 /* SPCameraView.m */,
+				5BAC57FE1B2270F9008A45F2 /* SPCameraViewController.h */,
+				5BAC57FF1B2270F9008A45F2 /* SPCameraViewController.m */,
 			);
 			name = RequetView;
 			sourceTree = "<group>";
@@ -158,6 +171,8 @@
 			children = (
 				5B57800B1B2135B2006B391D /* SPReadViewController.h */,
 				5B57800C1B2135B2006B391D /* SPReadViewController.m */,
+				5BAC57FB1B220206008A45F2 /* SPReadDetailViewController.h */,
+				5BAC57FC1B220206008A45F2 /* SPReadDetailViewController.m */,
 			);
 			name = ReadView;
 			sourceTree = "<group>";
@@ -427,6 +442,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B5780111B2136F7006B391D /* SPFindViewController.m in Sources */,
+				5BAC58001B2270F9008A45F2 /* SPCameraViewController.m in Sources */,
 				5B4399041B20FD56004BA36F /* SPRequestViewController.m in Sources */,
 				5B33C8E61B20CC6900CF28BE /* DSNavigationBar.m in Sources */,
 				5B33C8DE1B20BE1700CF28BE /* SPMainViewController.m in Sources */,
@@ -435,7 +451,9 @@
 				5BAB35EA1B1C9896005634D1 /* ViewController.m in Sources */,
 				5B33C8E11B20BE5000CF28BE /* SPLeftMenuViewController.m in Sources */,
 				5B5780151B21371E006B391D /* SPFoundViewController.m in Sources */,
+				5BAC58031B227415008A45F2 /* SPCameraView.m in Sources */,
 				5B57801D1B213E36006B391D /* UIViewController+Additions.m in Sources */,
+				5BAC57FD1B220206008A45F2 /* SPReadDetailViewController.m in Sources */,
 				5BAB35E71B1C9896005634D1 /* AppDelegate.m in Sources */,
 				5B4399081B2128BD004BA36F /* SPSearchViewController.m in Sources */,
 				5B57800D1B2135B2006B391D /* SPReadViewController.m in Sources */,

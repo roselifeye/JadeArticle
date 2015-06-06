@@ -13,7 +13,7 @@
 - (UIImageView *)createDoorViewWithBGImageName:(NSString *)BGImageName andDoorknobImageName:(NSString *)DoorknobImageName {
     UIImageView *doorImageView = [[UIImageView alloc] initWithFrame:self.view.frame];
     [doorImageView setImage:[UIImage imageNamed:BGImageName]];
-    NSLog(@"%f", self.view.frame.size.width);
+    NSLog(@"%f", self.view.frame.size.height);
     UIImageView *doorknobImageView = [[UIImageView alloc] initWithFrame:CGRectMake((doorImageView.frame.size.width - 185)/2.0f, (doorImageView.frame.size.height - 186)/2.0f, 185, 186)];
     [doorknobImageView setImage:[UIImage imageNamed:DoorknobImageName]];
     [doorImageView addSubview:doorknobImageView];
@@ -41,11 +41,11 @@
     UIImage *controllerScreenshot = [self imageWithView:toView];
     
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
-    UIView *coverView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, selfPortrait.size.width, selfPortrait.size.height)];
+    UIView *coverView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, controllerScreenshot.size.width, controllerScreenshot.size.height)];
     coverView.backgroundColor = [UIColor blackColor];
     [window addSubview:coverView];
     
-    UIImageView *fadedView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, controllerScreenshot.size.width, controllerScreenshot.size.height)];
+    UIImageView *fadedView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, selfPortrait.size.width, selfPortrait.size.height)];
     fadedView.image = controllerScreenshot;
     fadedView.alpha = 0.5;
     [coverView addSubview:fadedView];

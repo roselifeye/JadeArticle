@@ -7,6 +7,7 @@
 //
 
 #import "SPReadViewController.h"
+#import "SPReadDetailViewController.h"
 
 @interface SPReadViewController ()
 
@@ -30,6 +31,11 @@
                   ToDestinationView:self.view
                    andLogoImageView:[self createDoorViewWithBGImageName:@"MainMenuBG" andDoorknobImageName:@"readDoorKnob"]
                     transitionStyle:SPCurtainTransitionHorizontal];
+}
+
+- (IBAction)beginReadBtnClicked:(id)sender {
+    SPReadDetailViewController *readDetailView = [self.storyboard instantiateViewControllerWithIdentifier:@"readDetailView"];
+    [self.navigationController pushViewController:readDetailView animated:NO];
 }
 
 - (void)didReceiveMemoryWarning {

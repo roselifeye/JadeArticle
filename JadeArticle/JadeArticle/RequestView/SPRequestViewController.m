@@ -7,6 +7,7 @@
 //
 
 #import "SPRequestViewController.h"
+#import "SPCameraViewController.h"
 
 @interface SPRequestViewController ()
 
@@ -21,7 +22,7 @@
 }
 
 - (void)initBeginView {
-    UIImage *bgImage = [UIImage imageNamed:@"LeftMenuBG"];
+    UIImage *bgImage = [UIImage imageNamed:@"MainMenuBG"];
     self.view.layer.contents = (id) bgImage.CGImage;
     [self.navigationController setNavigationBarHidden:YES];
     
@@ -30,6 +31,11 @@
                   ToDestinationView:self.view
                    andLogoImageView:[self createDoorViewWithBGImageName:@"MainMenuBG" andDoorknobImageName:@"requestDoorKnob"]
                     transitionStyle:SPCurtainTransitionHorizontal];
+}
+
+- (IBAction)cameraBtnClicked:(id)sender {
+    SPCameraViewController *cameraView = [self.storyboard instantiateViewControllerWithIdentifier:@"cameraView"];
+    [self.navigationController pushViewController:cameraView animated:NO];
 }
 
 - (void)didReceiveMemoryWarning {
