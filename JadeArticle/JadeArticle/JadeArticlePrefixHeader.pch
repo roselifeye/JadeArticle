@@ -22,6 +22,7 @@
 
 #import "SPBlockTypeDef.h"
 #import "SPBaseViewController.h"
+#import "SPGlobalDefine.h"
 
 #import "UINavigationItem+CustomItem.h"
 #import "UIViewController+Additions.h"

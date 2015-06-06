@@ -35,7 +35,7 @@
 
 - (IBAction)cameraBtnClicked:(id)sender {
     SPCameraViewController *cameraView = [self.storyboard instantiateViewControllerWithIdentifier:@"cameraView"];
-    [self.navigationController pushViewController:cameraView animated:NO];
+    [self.navigationController pushViewController:cameraView animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

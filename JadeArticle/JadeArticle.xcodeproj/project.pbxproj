@@ -31,6 +31,7 @@
 		5BAC57FD1B220206008A45F2 /* SPReadDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAC57FC1B220206008A45F2 /* SPReadDetailViewController.m */; };
 		5BAC58001B2270F9008A45F2 /* SPCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAC57FF1B2270F9008A45F2 /* SPCameraViewController.m */; };
 		5BAC58031B227415008A45F2 /* SPCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAC58021B227415008A45F2 /* SPCameraView.m */; };
+		5BF296D21B22A46500FE1D6D /* SPPublishPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF296D11B22A46500FE1D6D /* SPPublishPhotoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,9 @@
 		5BAC57FF1B2270F9008A45F2 /* SPCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPCameraViewController.m; path = RequestView/SPCameraViewController.m; sourceTree = "<group>"; };
 		5BAC58011B227415008A45F2 /* SPCameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPCameraView.h; path = RequestView/SPCameraView.h; sourceTree = "<group>"; };
 		5BAC58021B227415008A45F2 /* SPCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPCameraView.m; path = RequestView/SPCameraView.m; sourceTree = "<group>"; };
+		5BF296D01B22A46500FE1D6D /* SPPublishPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPPublishPhotoViewController.h; path = RequestView/SPPublishPhotoViewController.h; sourceTree = "<group>"; };
+		5BF296D11B22A46500FE1D6D /* SPPublishPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPPublishPhotoViewController.m; path = RequestView/SPPublishPhotoViewController.m; sourceTree = "<group>"; };
+		5BF296D41B22B00000FE1D6D /* SPGlobalDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPGlobalDefine.h; sourceTree = "<group>"; };
 		AB8B6960F58514B82043408E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -153,6 +157,8 @@
 				5BAC58021B227415008A45F2 /* SPCameraView.m */,
 				5BAC57FE1B2270F9008A45F2 /* SPCameraViewController.h */,
 				5BAC57FF1B2270F9008A45F2 /* SPCameraViewController.m */,
+				5BF296D01B22A46500FE1D6D /* SPPublishPhotoViewController.h */,
+				5BF296D11B22A46500FE1D6D /* SPPublishPhotoViewController.m */,
 			);
 			name = RequetView;
 			sourceTree = "<group>";
@@ -237,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				5BAC57FA1B21FEC9008A45F2 /* SPBlockTypeDef.h */,
+				5BF296D41B22B00000FE1D6D /* SPGlobalDefine.h */,
 				5B57801A1B213DF6006B391D /* Additions */,
 				5B33C8E71B20D65D00CF28BE /* CustomNavigationItem */,
 				5B33C8E31B20CC6900CF28BE /* DSNavigationBar */,
@@ -452,6 +459,7 @@
 				5B33C8E11B20BE5000CF28BE /* SPLeftMenuViewController.m in Sources */,
 				5B5780151B21371E006B391D /* SPFoundViewController.m in Sources */,
 				5BAC58031B227415008A45F2 /* SPCameraView.m in Sources */,
+				5BF296D21B22A46500FE1D6D /* SPPublishPhotoViewController.m in Sources */,
 				5B57801D1B213E36006B391D /* UIViewController+Additions.m in Sources */,
 				5BAC57FD1B220206008A45F2 /* SPReadDetailViewController.m in Sources */,
 				5BAB35E71B1C9896005634D1 /* AppDelegate.m in Sources */,

@@ -8,10 +8,15 @@
 
 #import "SPCameraViewController.h"
 #import "SPCameraView.h"
+#import "SPPublishPhotoViewController.h"
 
 @interface SPCameraViewController () {
     SPCameraView *cameraView;
+    
     IBOutlet UIImageView *displayImageView;
+    IBOutlet UIButton *cancelBtn;
+    IBOutlet UIButton *sureBtn;
+    
     NSString *thePngPath;
 }
 
@@ -26,11 +31,11 @@
     cameraView = [[SPCameraView alloc] initWithFrame:self.view.frame positionDevice:CameraPositonBack andCameraButtonFrame:self.view.frame andImageName:@"cameraButton"];
     [self.view addSubview:cameraView];
     
-    
-    
     __weak UIImageView *weakImage = displayImageView;
     __weak SPCameraView *weakCamera = cameraView;
     
+    cancelBtn.hidden = NO;
+    sureBtn.hidden = NO;
     cameraView.blockCameraEnd = ^(BOOL result, NSString *resultMessage, id object){
         if (result) {
             NSString *pngPath = [NSHomeDirectory() stringByAppendingPathComponent:object];
@@ -43,13 +48,16 @@
 
 - (IBAction)publishPhoto:(UIButton *)sender {
     switch (sender.tag) {
-        case 0:
+        case 0: {
             [cameraView deleteWithContentPath:thePngPath];
             [self.navigationController popViewControllerAnimated:YES];
+        }
             break;
-        case 1:
-            
+        case 1: {
+            SPPublishPhotoViewController *publishPhotoView = [self.storyboard instantiateViewControllerWithIdentifier:@"publishPhotoView"];
+            [self.navigationController pushViewController:publishPhotoView animated:YES];
             break;
+        }
         default:
             break;
     }
