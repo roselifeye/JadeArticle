@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SPReadDetailViewController : UIViewController
+@interface SPReadDetailViewController : SPBaseViewController
 
 @end

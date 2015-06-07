@@ -1,13 +1,16 @@
 PODS:
   - JHChainableAnimations (1.2.0)
+  - MBProgressHUD (0.9.1)
   - RESideMenu (4.0.7)
 
 DEPENDENCIES:
   - JHChainableAnimations (~> 1.2.0)
+  - MBProgressHUD (~> 0.9.1)
   - RESideMenu (~> 4.0.7)
 
 SPEC CHECKSUMS:
   JHChainableAnimations: fb5620f6b36f241d039ee924b0ec4db8edefa27f
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
   RESideMenu: f24c508404b49c667344c54aba7e590883533958
 
 COCOAPODS: 0.37.1

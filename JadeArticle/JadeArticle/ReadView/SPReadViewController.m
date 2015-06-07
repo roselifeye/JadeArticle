@@ -8,6 +8,7 @@
 
 #import "SPReadViewController.h"
 #import "SPReadDetailViewController.h"
+#import "SPMainViewController.h"
 
 @interface SPReadViewController ()
 
@@ -19,13 +20,19 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self initBeginView];
+    [self initNavigationViewArray];
+}
+
+- (void)initNavigationViewArray {
+    SPMainViewController *mainView = [self.storyboard instantiateViewControllerWithIdentifier:@"mainMenuVIew"];
+    NSArray *viewArray = [NSArray arrayWithObjects:mainView, self, nil];
+    self.navigationController.viewControllers = viewArray;
 }
 
 - (void)initBeginView {
     UIImage *bgImage = [UIImage imageNamed:@"LeftMenuBG"];
     self.view.layer.contents = (id) bgImage.CGImage;
     [self.navigationController setNavigationBarHidden:YES];
-    
     
     [self curtainRevealViewFromView:[self createDoorViewWithBGImageName:@"MainMenuBG" andDoorknobImageName:@"doorknob"]
                   ToDestinationView:self.view

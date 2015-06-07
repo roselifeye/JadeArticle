@@ -7,272 +7,334 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		039FF4F4CE633D3268D45A84 /* UIView+JHChainableAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B63AE0F3C2A128165B3C07 /* UIView+JHChainableAnimations.m */; };
-		046D57B14D5962680E406520 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B988C3EEFF4A7A70DC609BE4 /* Foundation.framework */; };
-		052BC95BBEBD05E0C9D81BF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B988C3EEFF4A7A70DC609BE4 /* Foundation.framework */; };
-		074B1EFB11220D987C458A91 /* Pods-RESideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 283FDC52AF50B75D25AE84E4 /* Pods-RESideMenu-dummy.m */; };
-		1DA290A2ACD7627096E41B9B /* RECommonFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 16E2CAFA061BC0A4779B1405 /* RECommonFunctions.h */; };
-		1FE9111FB04FC02B1539C264 /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DD32DAA248094ECB151EB9FC /* RESideMenu.m */; };
-		25A8A57C7EBF51D9EB7A910D /* JHChainableBlocks.h in Headers */ = {isa = PBXBuildFile; fileRef = D2D5A42C5F7320BE35972251 /* JHChainableBlocks.h */; };
-		3146BDE1382E46E7ABDEEAB8 /* RESideMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 71854BF3BAF9719D40821787 /* RESideMenu.h */; };
-		4FA60FF3D9C603E338C2F970 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D558819208C8CD89A8A28982 /* QuartzCore.framework */; };
-		57E7F07B8B2F59C3F04F1051 /* NSBKeyframeAnimationFunctions.c in Sources */ = {isa = PBXBuildFile; fileRef = 2F97C205195EFFBE16D409D3 /* NSBKeyframeAnimationFunctions.c */; };
-		5C527D2121B24BEAB2289CD2 /* JHChainableAnimations.h in Headers */ = {isa = PBXBuildFile; fileRef = A89F2394920FE28ACCC56501 /* JHChainableAnimations.h */; };
-		748FA102ACEE1C8B556B5A6C /* JHKeyframeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C272743FF99C241B472E585 /* JHKeyframeAnimation.m */; };
-		7B75AD87F3EE9B609A9B1FDE /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDEA78BA808B29F41F0985A /* RECommonFunctions.m */; };
-		8CCBC1EC4DC3D6FEBA792A2A /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B960929CFD034E6770EB507 /* UIViewController+RESideMenu.m */; };
-		95857CFC416F9EF0993E21DB /* JHKeyframeAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EC2CB7F15437786946DD33A /* JHKeyframeAnimation.h */; };
-		9B1323A246BB98F7428F4585 /* NSBKeyframeAnimationFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CAAE0A18D05386912BEA31A /* NSBKeyframeAnimationFunctions.h */; };
-		B31025AA74888F33403E27F1 /* UIViewController+RESideMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = C9CBB7E52B361E6292491A35 /* UIViewController+RESideMenu.h */; };
-		BE8F4A6FBCD341BEB6024E07 /* UIView+JHChainableAnimations.h in Headers */ = {isa = PBXBuildFile; fileRef = AAE52DEFBE7C47169FF72C11 /* UIView+JHChainableAnimations.h */; };
-		CCE0130BFAFCC9B4F65BB68D /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F44344047A036E8434F2C1 /* Pods-dummy.m */; };
-		CE264EF34FCD2FF493444877 /* Pods-JHChainableAnimations-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3270914984028178B75AC20D /* Pods-JHChainableAnimations-dummy.m */; };
-		EAED32D1C8867C2B560B5489 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B988C3EEFF4A7A70DC609BE4 /* Foundation.framework */; };
+		0F1CA1D1A47B267C26A28D7A /* NSBKeyframeAnimationFunctions.c in Sources */ = {isa = PBXBuildFile; fileRef = 25BDD40F8F92E852AB9BF8BC /* NSBKeyframeAnimationFunctions.c */; };
+		123A8C0BE8024964AF63EC35 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 116F2D40D8039C2A03158CF0 /* Foundation.framework */; };
+		1C349A34B42ECA5FB99E8027 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B9D06D2DADC4DC79FAD784 /* CoreGraphics.framework */; };
+		1DCAF5646A0F6B4E5AD0F658 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CC86C1B4994DC875862B2767 /* Pods-dummy.m */; };
+		261F8F9D98EC340F374AC97F /* UIView+JHChainableAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = D791F4C7E7866BCAF9C1B0BA /* UIView+JHChainableAnimations.m */; };
+		3081CA8ADEEFF08054404D55 /* Pods-RESideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F983191C932544FE628AE234 /* Pods-RESideMenu-dummy.m */; };
+		360B74B4E1D6C1DD2914BC1E /* RECommonFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EB11B78C538B06E5F7B6147 /* RECommonFunctions.h */; };
+		4627EC471366E75E7864C7AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 116F2D40D8039C2A03158CF0 /* Foundation.framework */; };
+		475560AC0F7A8E7FFF8B6358 /* JHKeyframeAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F5BF7C6558CC94DE82405FD /* JHKeyframeAnimation.h */; };
+		4C354A9E9A7D659AC6E9ED4E /* JHChainableAnimations.h in Headers */ = {isa = PBXBuildFile; fileRef = 46445E972CDA4711C4A86582 /* JHChainableAnimations.h */; };
+		5E0D88E38450E4869321C551 /* UIViewController+RESideMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 75F1D9D46001272125D281C0 /* UIViewController+RESideMenu.h */; };
+		76777D81577B3DFD67BBCC49 /* JHChainableBlocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E7979C092D3094E79BA2566 /* JHChainableBlocks.h */; };
+		7BECA028D44D01619D3615A4 /* UIView+JHChainableAnimations.h in Headers */ = {isa = PBXBuildFile; fileRef = 227AAFD3A16B4EDA37604215 /* UIView+JHChainableAnimations.h */; };
+		851CCA85413D4D321A459F39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 116F2D40D8039C2A03158CF0 /* Foundation.framework */; };
+		963B8813DF830D71E4ECDC4F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA16C2D3D5399EF570F58A0F /* QuartzCore.framework */; };
+		99503AA2EF93E0CA3C0AC71D /* Pods-MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F67C0941E323ED305006B7 /* Pods-MBProgressHUD-dummy.m */; };
+		9F534A3162138751BF0D83F7 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E77E7AB3CE78EA2F07B132A /* MBProgressHUD.h */; };
+		A63BC61A717C10064A2D1885 /* RESideMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 115F6ABFB591912A1558391D /* RESideMenu.h */; };
+		BA4F65CBEDE3C048C1A87FB6 /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = EE46CB790CB9E098AD39641D /* RESideMenu.m */; };
+		BEEDE81B1569BCA1BF0A3FA9 /* NSBKeyframeAnimationFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9283D9829A91F7AEA2DB68A6 /* NSBKeyframeAnimationFunctions.h */; };
+		BFE67E7E8CA706A71881CC8A /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F89D130B6A0C14AE99DBCEA /* UIViewController+RESideMenu.m */; };
+		C2EA2AA5C668A36D327484E7 /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = BC652A739A1968946E2AD8AC /* RECommonFunctions.m */; };
+		D5DE80898321CD83A0196A46 /* Pods-JHChainableAnimations-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE9479DAF7992C3895F5849 /* Pods-JHChainableAnimations-dummy.m */; };
+		DA04B873D45F5937C9EA8C03 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DA551E02CB8954A60DD50F /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		EBD4D46E78B3698EAFEBD325 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 116F2D40D8039C2A03158CF0 /* Foundation.framework */; };
+		EEDD4B004F582223E2C44186 /* JHKeyframeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E487C00880A7AB733763AF7A /* JHKeyframeAnimation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		34B49146A678323EE3549D23 /* PBXContainerItemProxy */ = {
+		4FC802E0745F79B67165889E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6CBEBD9F68BE16A07CE497AB /* Project object */;
+			containerPortal = 95EF2234CE7B6028CA8FC98E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8D8D21CCB67451ED37D24F4C;
+			remoteGlobalIDString = 024D3FF3BA2F67A2BD70E5D8;
+			remoteInfo = "Pods-RESideMenu";
+		};
+		9CBB27F01F52104219B33A27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95EF2234CE7B6028CA8FC98E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6A3D6ECD1D840C565C52620;
 			remoteInfo = "Pods-JHChainableAnimations";
 		};
-		790A1028762D4AE04DAE4FBD /* PBXContainerItemProxy */ = {
+		FBC02FE8946BDD130EBC7F27 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6CBEBD9F68BE16A07CE497AB /* Project object */;
+			containerPortal = 95EF2234CE7B6028CA8FC98E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 727EF36CB7D76DDC08EE7A15;
-			remoteInfo = "Pods-RESideMenu";
+			remoteGlobalIDString = 0E66CF7F3BADF489D99907B3;
+			remoteInfo = "Pods-MBProgressHUD";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		077FBD2D0682A14B79EA4CDD /* Pods-JHChainableAnimations-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JHChainableAnimations-Private.xcconfig"; sourceTree = "<group>"; };
-		0C272743FF99C241B472E585 /* JHKeyframeAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JHKeyframeAnimation.m; path = JHChainableAnimations/JHKeyframeAnimation.m; sourceTree = "<group>"; };
-		0CAAE0A18D05386912BEA31A /* NSBKeyframeAnimationFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NSBKeyframeAnimationFunctions.h; path = JHChainableAnimations/NSBKeyframeAnimationFunctions.h; sourceTree = "<group>"; };
-		16E2CAFA061BC0A4779B1405 /* RECommonFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RECommonFunctions.h; path = RESideMenu/RECommonFunctions.h; sourceTree = "<group>"; };
-		19BA7E5DE23174A512AE5B68 /* Pods-JHChainableAnimations.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JHChainableAnimations.xcconfig"; sourceTree = "<group>"; };
-		283FDC52AF50B75D25AE84E4 /* Pods-RESideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RESideMenu-dummy.m"; sourceTree = "<group>"; };
-		2F97C205195EFFBE16D409D3 /* NSBKeyframeAnimationFunctions.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = NSBKeyframeAnimationFunctions.c; path = JHChainableAnimations/NSBKeyframeAnimationFunctions.c; sourceTree = "<group>"; };
-		3270914984028178B75AC20D /* Pods-JHChainableAnimations-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JHChainableAnimations-dummy.m"; sourceTree = "<group>"; };
-		393FE447F9D0E0BB2AFD6CB7 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3B960929CFD034E6770EB507 /* UIViewController+RESideMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+RESideMenu.m"; path = "RESideMenu/UIViewController+RESideMenu.m"; sourceTree = "<group>"; };
-		3EC2CB7F15437786946DD33A /* JHKeyframeAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JHKeyframeAnimation.h; path = JHChainableAnimations/JHKeyframeAnimation.h; sourceTree = "<group>"; };
-		4BF0FD161E14D58AA07DB778 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
-		4E291D5B316BAC1BF1656BF3 /* Pods-RESideMenu-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RESideMenu-Private.xcconfig"; sourceTree = "<group>"; };
-		540F5426243CC15CC7963C20 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		55EC0CA9CFEA2EC3E1427B84 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		6B6E772D933ABCC81A6DE584 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		6BDE72B2C38641170025B8DB /* Pods-JHChainableAnimations-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JHChainableAnimations-prefix.pch"; sourceTree = "<group>"; };
-		71854BF3BAF9719D40821787 /* RESideMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RESideMenu.h; path = RESideMenu/RESideMenu.h; sourceTree = "<group>"; };
-		75735F76D0D052C229A8E0A9 /* Pods-RESideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RESideMenu.xcconfig"; sourceTree = "<group>"; };
-		85B63AE0F3C2A128165B3C07 /* UIView+JHChainableAnimations.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+JHChainableAnimations.m"; path = "JHChainableAnimations/UIView+JHChainableAnimations.m"; sourceTree = "<group>"; };
-		94EF7611F1B478FEFCA9642E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		9CDA245B214402006797B7F1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		A1CA062BD2CCAD2259146A42 /* libPods-RESideMenu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RESideMenu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A89F2394920FE28ACCC56501 /* JHChainableAnimations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JHChainableAnimations.h; path = JHChainableAnimations/JHChainableAnimations.h; sourceTree = "<group>"; };
-		AAE52DEFBE7C47169FF72C11 /* UIView+JHChainableAnimations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+JHChainableAnimations.h"; path = "JHChainableAnimations/UIView+JHChainableAnimations.h"; sourceTree = "<group>"; };
-		B988C3EEFF4A7A70DC609BE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		C9CBB7E52B361E6292491A35 /* UIViewController+RESideMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+RESideMenu.h"; path = "RESideMenu/UIViewController+RESideMenu.h"; sourceTree = "<group>"; };
-		D1671834D15FE04EB9C4B068 /* libPods-JHChainableAnimations.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JHChainableAnimations.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2D5A42C5F7320BE35972251 /* JHChainableBlocks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JHChainableBlocks.h; path = JHChainableAnimations/JHChainableBlocks.h; sourceTree = "<group>"; };
-		D558819208C8CD89A8A28982 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		DD32DAA248094ECB151EB9FC /* RESideMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RESideMenu.m; path = RESideMenu/RESideMenu.m; sourceTree = "<group>"; };
-		DEDEA78BA808B29F41F0985A /* RECommonFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RECommonFunctions.m; path = RESideMenu/RECommonFunctions.m; sourceTree = "<group>"; };
-		E294D6165DBB18C04E8B4106 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		F0F44344047A036E8434F2C1 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		F131AE16F451CF577E594EFD /* Pods-RESideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RESideMenu-prefix.pch"; sourceTree = "<group>"; };
+		0B54B989E79E94737AD3D7A9 /* Pods-RESideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RESideMenu.xcconfig"; sourceTree = "<group>"; };
+		115F6ABFB591912A1558391D /* RESideMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RESideMenu.h; path = RESideMenu/RESideMenu.h; sourceTree = "<group>"; };
+		116F2D40D8039C2A03158CF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		11BB613C0DBF8AA6D404820D /* Pods-RESideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RESideMenu-prefix.pch"; sourceTree = "<group>"; };
+		1F5BF7C6558CC94DE82405FD /* JHKeyframeAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JHKeyframeAnimation.h; path = JHChainableAnimations/JHKeyframeAnimation.h; sourceTree = "<group>"; };
+		227AAFD3A16B4EDA37604215 /* UIView+JHChainableAnimations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+JHChainableAnimations.h"; path = "JHChainableAnimations/UIView+JHChainableAnimations.h"; sourceTree = "<group>"; };
+		25BDD40F8F92E852AB9BF8BC /* NSBKeyframeAnimationFunctions.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = NSBKeyframeAnimationFunctions.c; path = JHChainableAnimations/NSBKeyframeAnimationFunctions.c; sourceTree = "<group>"; };
+		2921A29EB8BF40FFA50E23B4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		2AFBDFB8E993B55CBD9469D1 /* libPods-RESideMenu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RESideMenu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F2396E27987E29120062658 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2F89D130B6A0C14AE99DBCEA /* UIViewController+RESideMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+RESideMenu.m"; path = "RESideMenu/UIViewController+RESideMenu.m"; sourceTree = "<group>"; };
+		3930DD4112F8B931AA08A265 /* Pods-MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		4062FECC0B64208DF1FED6AB /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		46445E972CDA4711C4A86582 /* JHChainableAnimations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JHChainableAnimations.h; path = JHChainableAnimations/JHChainableAnimations.h; sourceTree = "<group>"; };
+		5B09F2FE6E51888194FE6818 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		67C868A9134CA6B09BCB3B7C /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		68583DC176FC0C872D977385 /* Pods-JHChainableAnimations-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JHChainableAnimations-prefix.pch"; sourceTree = "<group>"; };
+		6C937F72E4A469DA4C5038C5 /* Pods-RESideMenu-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RESideMenu-Private.xcconfig"; sourceTree = "<group>"; };
+		6E7979C092D3094E79BA2566 /* JHChainableBlocks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JHChainableBlocks.h; path = JHChainableAnimations/JHChainableBlocks.h; sourceTree = "<group>"; };
+		75F1D9D46001272125D281C0 /* UIViewController+RESideMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+RESideMenu.h"; path = "RESideMenu/UIViewController+RESideMenu.h"; sourceTree = "<group>"; };
+		7E250DC42DE2B2D65AB32EE4 /* Pods-MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MBProgressHUD.xcconfig"; sourceTree = "<group>"; };
+		8E77E7AB3CE78EA2F07B132A /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		8EB11B78C538B06E5F7B6147 /* RECommonFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RECommonFunctions.h; path = RESideMenu/RECommonFunctions.h; sourceTree = "<group>"; };
+		91B9D06D2DADC4DC79FAD784 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		9283D9829A91F7AEA2DB68A6 /* NSBKeyframeAnimationFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NSBKeyframeAnimationFunctions.h; path = JHChainableAnimations/NSBKeyframeAnimationFunctions.h; sourceTree = "<group>"; };
+		99F67C0941E323ED305006B7 /* Pods-MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		9BC07EB9551ECACD2D16E65B /* Pods-JHChainableAnimations-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JHChainableAnimations-Private.xcconfig"; sourceTree = "<group>"; };
+		B3DA551E02CB8954A60DD50F /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		B83638258E3333481033BE1D /* libPods-MBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MBProgressHUD.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC652A739A1968946E2AD8AC /* RECommonFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RECommonFunctions.m; path = RESideMenu/RECommonFunctions.m; sourceTree = "<group>"; };
+		C1BA42C519E974D9C4A61C38 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		CC86C1B4994DC875862B2767 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		CDE9479DAF7992C3895F5849 /* Pods-JHChainableAnimations-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JHChainableAnimations-dummy.m"; sourceTree = "<group>"; };
+		D5D1D506C1BB0346E500080B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D791F4C7E7866BCAF9C1B0BA /* UIView+JHChainableAnimations.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+JHChainableAnimations.m"; path = "JHChainableAnimations/UIView+JHChainableAnimations.m"; sourceTree = "<group>"; };
+		D9729B5BB7C551A0A3BD23FB /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		E4424D6D4FA92C9C6CECE660 /* libPods-JHChainableAnimations.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JHChainableAnimations.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E487C00880A7AB733763AF7A /* JHKeyframeAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JHKeyframeAnimation.m; path = JHChainableAnimations/JHKeyframeAnimation.m; sourceTree = "<group>"; };
+		EE46CB790CB9E098AD39641D /* RESideMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RESideMenu.m; path = RESideMenu/RESideMenu.m; sourceTree = "<group>"; };
+		F10921DFC212D4EE4B00F387 /* Pods-MBProgressHUD-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MBProgressHUD-Private.xcconfig"; sourceTree = "<group>"; };
+		F983191C932544FE628AE234 /* Pods-RESideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RESideMenu-dummy.m"; sourceTree = "<group>"; };
+		FA16C2D3D5399EF570F58A0F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		FEDC3281E09B0672353BE16C /* Pods-JHChainableAnimations.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JHChainableAnimations.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1393881F2F1B1E046AB7C309 /* Frameworks */ = {
+		2EC17A7C43EBB5287D6E3738 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAED32D1C8867C2B560B5489 /* Foundation.framework in Frameworks */,
-				4FA60FF3D9C603E338C2F970 /* QuartzCore.framework in Frameworks */,
+				1C349A34B42ECA5FB99E8027 /* CoreGraphics.framework in Frameworks */,
+				4627EC471366E75E7864C7AB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		13A17CCCE99F8668C28F52AC /* Frameworks */ = {
+		78B093EE688318CC20113247 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				046D57B14D5962680E406520 /* Foundation.framework in Frameworks */,
+				851CCA85413D4D321A459F39 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		59459C98714D9AE4CA127758 /* Frameworks */ = {
+		8660F4DFD248E18F28B83928 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				052BC95BBEBD05E0C9D81BF9 /* Foundation.framework in Frameworks */,
+				EBD4D46E78B3698EAFEBD325 /* Foundation.framework in Frameworks */,
+				963B8813DF830D71E4ECDC4F /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A763C1E0EB1D96896F8C06DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				123A8C0BE8024964AF63EC35 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		16528BE422A3BCC1296DA785 /* RESideMenu */ = {
+		16336A58C42A760F0857DF1A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				16E2CAFA061BC0A4779B1405 /* RECommonFunctions.h */,
-				DEDEA78BA808B29F41F0985A /* RECommonFunctions.m */,
-				71854BF3BAF9719D40821787 /* RESideMenu.h */,
-				DD32DAA248094ECB151EB9FC /* RESideMenu.m */,
-				C9CBB7E52B361E6292491A35 /* UIViewController+RESideMenu.h */,
-				3B960929CFD034E6770EB507 /* UIViewController+RESideMenu.m */,
-				2680345F8EDB220238946D28 /* Support Files */,
-			);
-			path = RESideMenu;
-			sourceTree = "<group>";
-		};
-		2680345F8EDB220238946D28 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				75735F76D0D052C229A8E0A9 /* Pods-RESideMenu.xcconfig */,
-				4E291D5B316BAC1BF1656BF3 /* Pods-RESideMenu-Private.xcconfig */,
-				283FDC52AF50B75D25AE84E4 /* Pods-RESideMenu-dummy.m */,
-				F131AE16F451CF577E594EFD /* Pods-RESideMenu-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-RESideMenu";
-			sourceTree = "<group>";
-		};
-		3568478DE35726E66C0CBE31 = {
-			isa = PBXGroup;
-			children = (
-				540F5426243CC15CC7963C20 /* Podfile */,
-				C3C1C5935A6A34335A1C05CB /* Frameworks */,
-				82E6E03F35DA703DDBF65EEA /* Pods */,
-				FC3979C293B3575BCFAFD3F7 /* Products */,
-				89E39CFB7186FFAC5D2DC660 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		701D5461FCEEF31A0EC8363A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				19BA7E5DE23174A512AE5B68 /* Pods-JHChainableAnimations.xcconfig */,
-				077FBD2D0682A14B79EA4CDD /* Pods-JHChainableAnimations-Private.xcconfig */,
-				3270914984028178B75AC20D /* Pods-JHChainableAnimations-dummy.m */,
-				6BDE72B2C38641170025B8DB /* Pods-JHChainableAnimations-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-JHChainableAnimations";
-			sourceTree = "<group>";
-		};
-		825E46F163759E796FDE1E7D /* JHChainableAnimations */ = {
-			isa = PBXGroup;
-			children = (
-				A89F2394920FE28ACCC56501 /* JHChainableAnimations.h */,
-				D2D5A42C5F7320BE35972251 /* JHChainableBlocks.h */,
-				3EC2CB7F15437786946DD33A /* JHKeyframeAnimation.h */,
-				0C272743FF99C241B472E585 /* JHKeyframeAnimation.m */,
-				2F97C205195EFFBE16D409D3 /* NSBKeyframeAnimationFunctions.c */,
-				0CAAE0A18D05386912BEA31A /* NSBKeyframeAnimationFunctions.h */,
-				AAE52DEFBE7C47169FF72C11 /* UIView+JHChainableAnimations.h */,
-				85B63AE0F3C2A128165B3C07 /* UIView+JHChainableAnimations.m */,
-				701D5461FCEEF31A0EC8363A /* Support Files */,
-			);
-			path = JHChainableAnimations;
-			sourceTree = "<group>";
-		};
-		82E6E03F35DA703DDBF65EEA /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				825E46F163759E796FDE1E7D /* JHChainableAnimations */,
-				16528BE422A3BCC1296DA785 /* RESideMenu */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		848F20D37F80AC405D9FBED2 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				393FE447F9D0E0BB2AFD6CB7 /* Pods-acknowledgements.markdown */,
-				6B6E772D933ABCC81A6DE584 /* Pods-acknowledgements.plist */,
-				F0F44344047A036E8434F2C1 /* Pods-dummy.m */,
-				4BF0FD161E14D58AA07DB778 /* Pods-environment.h */,
-				55EC0CA9CFEA2EC3E1427B84 /* Pods-resources.sh */,
-				94EF7611F1B478FEFCA9642E /* Pods.debug.xcconfig */,
-				9CDA245B214402006797B7F1 /* Pods.release.xcconfig */,
+				4062FECC0B64208DF1FED6AB /* Pods-acknowledgements.markdown */,
+				D9729B5BB7C551A0A3BD23FB /* Pods-acknowledgements.plist */,
+				CC86C1B4994DC875862B2767 /* Pods-dummy.m */,
+				67C868A9134CA6B09BCB3B7C /* Pods-environment.h */,
+				C1BA42C519E974D9C4A61C38 /* Pods-resources.sh */,
+				2921A29EB8BF40FFA50E23B4 /* Pods.debug.xcconfig */,
+				5B09F2FE6E51888194FE6818 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
 			path = "Target Support Files/Pods";
 			sourceTree = "<group>";
 		};
-		89E39CFB7186FFAC5D2DC660 /* Targets Support Files */ = {
+		17AF83FDE2604C01AD470194 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				848F20D37F80AC405D9FBED2 /* Pods */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		C3C1C5935A6A34335A1C05CB /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CB2720BF4B9A2946C2D3D183 /* iOS */,
+				EF8C5AA97EBA8E3A7B0630B2 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CB2720BF4B9A2946C2D3D183 /* iOS */ = {
+		1C61E2E124EDF7CBE8868E7A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B988C3EEFF4A7A70DC609BE4 /* Foundation.framework */,
-				D558819208C8CD89A8A28982 /* QuartzCore.framework */,
+				FEDC3281E09B0672353BE16C /* Pods-JHChainableAnimations.xcconfig */,
+				9BC07EB9551ECACD2D16E65B /* Pods-JHChainableAnimations-Private.xcconfig */,
+				CDE9479DAF7992C3895F5849 /* Pods-JHChainableAnimations-dummy.m */,
+				68583DC176FC0C872D977385 /* Pods-JHChainableAnimations-prefix.pch */,
 			);
-			name = iOS;
+			name = "Support Files";
+			path = "../Target Support Files/Pods-JHChainableAnimations";
 			sourceTree = "<group>";
 		};
-		FC3979C293B3575BCFAFD3F7 /* Products */ = {
+		26DE00AB85A79DE9070EC550 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E294D6165DBB18C04E8B4106 /* libPods.a */,
-				D1671834D15FE04EB9C4B068 /* libPods-JHChainableAnimations.a */,
-				A1CA062BD2CCAD2259146A42 /* libPods-RESideMenu.a */,
+				D5D1D506C1BB0346E500080B /* libPods.a */,
+				E4424D6D4FA92C9C6CECE660 /* libPods-JHChainableAnimations.a */,
+				B83638258E3333481033BE1D /* libPods-MBProgressHUD.a */,
+				2AFBDFB8E993B55CBD9469D1 /* libPods-RESideMenu.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		383B1704F9731BD8F0C313A8 /* RESideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				8EB11B78C538B06E5F7B6147 /* RECommonFunctions.h */,
+				BC652A739A1968946E2AD8AC /* RECommonFunctions.m */,
+				115F6ABFB591912A1558391D /* RESideMenu.h */,
+				EE46CB790CB9E098AD39641D /* RESideMenu.m */,
+				75F1D9D46001272125D281C0 /* UIViewController+RESideMenu.h */,
+				2F89D130B6A0C14AE99DBCEA /* UIViewController+RESideMenu.m */,
+				6B80E48ED39841F7501B0A61 /* Support Files */,
+			);
+			path = RESideMenu;
+			sourceTree = "<group>";
+		};
+		605EA788E0784B45EE7F3BDE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E250DC42DE2B2D65AB32EE4 /* Pods-MBProgressHUD.xcconfig */,
+				F10921DFC212D4EE4B00F387 /* Pods-MBProgressHUD-Private.xcconfig */,
+				99F67C0941E323ED305006B7 /* Pods-MBProgressHUD-dummy.m */,
+				3930DD4112F8B931AA08A265 /* Pods-MBProgressHUD-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-MBProgressHUD";
+			sourceTree = "<group>";
+		};
+		6699619DB3BB2AF8C517B173 = {
+			isa = PBXGroup;
+			children = (
+				2F2396E27987E29120062658 /* Podfile */,
+				17AF83FDE2604C01AD470194 /* Frameworks */,
+				726831C148C965579CE9B58D /* Pods */,
+				26DE00AB85A79DE9070EC550 /* Products */,
+				E7BD4C3B972F392D383438C7 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		6B80E48ED39841F7501B0A61 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0B54B989E79E94737AD3D7A9 /* Pods-RESideMenu.xcconfig */,
+				6C937F72E4A469DA4C5038C5 /* Pods-RESideMenu-Private.xcconfig */,
+				F983191C932544FE628AE234 /* Pods-RESideMenu-dummy.m */,
+				11BB613C0DBF8AA6D404820D /* Pods-RESideMenu-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-RESideMenu";
+			sourceTree = "<group>";
+		};
+		726831C148C965579CE9B58D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E4B2BDB454C9FFA2A2EEEB18 /* JHChainableAnimations */,
+				7B2ED318D493CF12AAAD4B22 /* MBProgressHUD */,
+				383B1704F9731BD8F0C313A8 /* RESideMenu */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7B2ED318D493CF12AAAD4B22 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				8E77E7AB3CE78EA2F07B132A /* MBProgressHUD.h */,
+				B3DA551E02CB8954A60DD50F /* MBProgressHUD.m */,
+				605EA788E0784B45EE7F3BDE /* Support Files */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		E4B2BDB454C9FFA2A2EEEB18 /* JHChainableAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				46445E972CDA4711C4A86582 /* JHChainableAnimations.h */,
+				6E7979C092D3094E79BA2566 /* JHChainableBlocks.h */,
+				1F5BF7C6558CC94DE82405FD /* JHKeyframeAnimation.h */,
+				E487C00880A7AB733763AF7A /* JHKeyframeAnimation.m */,
+				25BDD40F8F92E852AB9BF8BC /* NSBKeyframeAnimationFunctions.c */,
+				9283D9829A91F7AEA2DB68A6 /* NSBKeyframeAnimationFunctions.h */,
+				227AAFD3A16B4EDA37604215 /* UIView+JHChainableAnimations.h */,
+				D791F4C7E7866BCAF9C1B0BA /* UIView+JHChainableAnimations.m */,
+				1C61E2E124EDF7CBE8868E7A /* Support Files */,
+			);
+			path = JHChainableAnimations;
+			sourceTree = "<group>";
+		};
+		E7BD4C3B972F392D383438C7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				16336A58C42A760F0857DF1A /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		EF8C5AA97EBA8E3A7B0630B2 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				91B9D06D2DADC4DC79FAD784 /* CoreGraphics.framework */,
+				116F2D40D8039C2A03158CF0 /* Foundation.framework */,
+				FA16C2D3D5399EF570F58A0F /* QuartzCore.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3C7CC18A3B3C3580AF8B9FEB /* Headers */ = {
+		580A4EA919FBFEA91E779B6F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DA290A2ACD7627096E41B9B /* RECommonFunctions.h in Headers */,
-				3146BDE1382E46E7ABDEEAB8 /* RESideMenu.h in Headers */,
-				B31025AA74888F33403E27F1 /* UIViewController+RESideMenu.h in Headers */,
+				9F534A3162138751BF0D83F7 /* MBProgressHUD.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		98FA9FC977C6405DEF2225E9 /* Headers */ = {
+		D462407E8BFAF2CF01A47765 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C527D2121B24BEAB2289CD2 /* JHChainableAnimations.h in Headers */,
-				25A8A57C7EBF51D9EB7A910D /* JHChainableBlocks.h in Headers */,
-				95857CFC416F9EF0993E21DB /* JHKeyframeAnimation.h in Headers */,
-				9B1323A246BB98F7428F4585 /* NSBKeyframeAnimationFunctions.h in Headers */,
-				BE8F4A6FBCD341BEB6024E07 /* UIView+JHChainableAnimations.h in Headers */,
+				4C354A9E9A7D659AC6E9ED4E /* JHChainableAnimations.h in Headers */,
+				76777D81577B3DFD67BBCC49 /* JHChainableBlocks.h in Headers */,
+				475560AC0F7A8E7FFF8B6358 /* JHKeyframeAnimation.h in Headers */,
+				BEEDE81B1569BCA1BF0A3FA9 /* NSBKeyframeAnimationFunctions.h in Headers */,
+				7BECA028D44D01619D3615A4 /* UIView+JHChainableAnimations.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB034A2AD70F3DE202F4C5BF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360B74B4E1D6C1DD2914BC1E /* RECommonFunctions.h in Headers */,
+				A63BC61A717C10064A2D1885 /* RESideMenu.h in Headers */,
+				5E0D88E38450E4869321C551 /* UIViewController+RESideMenu.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		727EF36CB7D76DDC08EE7A15 /* Pods-RESideMenu */ = {
+		024D3FF3BA2F67A2BD70E5D8 /* Pods-RESideMenu */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FA450C318420BD5EED58789E /* Build configuration list for PBXNativeTarget "Pods-RESideMenu" */;
+			buildConfigurationList = 0EFE2D596F4BA17B8E6226B3 /* Build configuration list for PBXNativeTarget "Pods-RESideMenu" */;
 			buildPhases = (
-				279795195F65A6AFF344BC7E /* Sources */,
-				1393881F2F1B1E046AB7C309 /* Frameworks */,
-				3C7CC18A3B3C3580AF8B9FEB /* Headers */,
+				03C107FD0F7DA6B5A63316B4 /* Sources */,
+				8660F4DFD248E18F28B83928 /* Frameworks */,
+				FB034A2AD70F3DE202F4C5BF /* Headers */,
 			);
 			buildRules = (
 			);
@@ -280,16 +342,52 @@
 			);
 			name = "Pods-RESideMenu";
 			productName = "Pods-RESideMenu";
-			productReference = A1CA062BD2CCAD2259146A42 /* libPods-RESideMenu.a */;
+			productReference = 2AFBDFB8E993B55CBD9469D1 /* libPods-RESideMenu.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		8D8D21CCB67451ED37D24F4C /* Pods-JHChainableAnimations */ = {
+		0E66CF7F3BADF489D99907B3 /* Pods-MBProgressHUD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 820EC7312101A9E23277D94F /* Build configuration list for PBXNativeTarget "Pods-JHChainableAnimations" */;
+			buildConfigurationList = 296A20C5D1942AFE8E462FEF /* Build configuration list for PBXNativeTarget "Pods-MBProgressHUD" */;
 			buildPhases = (
-				D7A2110A3300A3F2D4414C96 /* Sources */,
-				13A17CCCE99F8668C28F52AC /* Frameworks */,
-				98FA9FC977C6405DEF2225E9 /* Headers */,
+				AEAAA6E562AB8CF5A819739F /* Sources */,
+				2EC17A7C43EBB5287D6E3738 /* Frameworks */,
+				580A4EA919FBFEA91E779B6F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-MBProgressHUD";
+			productName = "Pods-MBProgressHUD";
+			productReference = B83638258E3333481033BE1D /* libPods-MBProgressHUD.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		0F43C39CAE07D7229D37431F /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CEB655D7D1B528224FF7853 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				301431D79CA67CF8096F90A7 /* Sources */,
+				78B093EE688318CC20113247 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64D93CB1AF57803FA9160E54 /* PBXTargetDependency */,
+				28201B453B73D7E026E40BA8 /* PBXTargetDependency */,
+				D07C0019D79DA35CE7EF4D4E /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = D5D1D506C1BB0346E500080B /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A6A3D6ECD1D840C565C52620 /* Pods-JHChainableAnimations */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64A113C62CAE4D371CB28047 /* Build configuration list for PBXNativeTarget "Pods-JHChainableAnimations" */;
+			buildPhases = (
+				F2B157506FA666FE65D50101 /* Sources */,
+				A763C1E0EB1D96896F8C06DE /* Frameworks */,
+				D462407E8BFAF2CF01A47765 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -297,122 +395,136 @@
 			);
 			name = "Pods-JHChainableAnimations";
 			productName = "Pods-JHChainableAnimations";
-			productReference = D1671834D15FE04EB9C4B068 /* libPods-JHChainableAnimations.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		B6DCBC174E152961528E269F /* Pods */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EF3A42A350B90BBC987BC8F8 /* Build configuration list for PBXNativeTarget "Pods" */;
-			buildPhases = (
-				EDD5B12A5954C65A0DD72CCA /* Sources */,
-				59459C98714D9AE4CA127758 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1C181826752BD563E93CBAA2 /* PBXTargetDependency */,
-				F9C3B54F5572CD42505CB184 /* PBXTargetDependency */,
-			);
-			name = Pods;
-			productName = Pods;
-			productReference = E294D6165DBB18C04E8B4106 /* libPods.a */;
+			productReference = E4424D6D4FA92C9C6CECE660 /* libPods-JHChainableAnimations.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6CBEBD9F68BE16A07CE497AB /* Project object */ = {
+		95EF2234CE7B6028CA8FC98E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0640;
 			};
-			buildConfigurationList = 18FD0045A1A6C2670A8CE3B2 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 77F16ED31E0771D22B6E0457 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 3568478DE35726E66C0CBE31;
-			productRefGroup = FC3979C293B3575BCFAFD3F7 /* Products */;
+			mainGroup = 6699619DB3BB2AF8C517B173;
+			productRefGroup = 26DE00AB85A79DE9070EC550 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B6DCBC174E152961528E269F /* Pods */,
-				8D8D21CCB67451ED37D24F4C /* Pods-JHChainableAnimations */,
-				727EF36CB7D76DDC08EE7A15 /* Pods-RESideMenu */,
+				0F43C39CAE07D7229D37431F /* Pods */,
+				A6A3D6ECD1D840C565C52620 /* Pods-JHChainableAnimations */,
+				0E66CF7F3BADF489D99907B3 /* Pods-MBProgressHUD */,
+				024D3FF3BA2F67A2BD70E5D8 /* Pods-RESideMenu */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		279795195F65A6AFF344BC7E /* Sources */ = {
+		03C107FD0F7DA6B5A63316B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				074B1EFB11220D987C458A91 /* Pods-RESideMenu-dummy.m in Sources */,
-				7B75AD87F3EE9B609A9B1FDE /* RECommonFunctions.m in Sources */,
-				1FE9111FB04FC02B1539C264 /* RESideMenu.m in Sources */,
-				8CCBC1EC4DC3D6FEBA792A2A /* UIViewController+RESideMenu.m in Sources */,
+				3081CA8ADEEFF08054404D55 /* Pods-RESideMenu-dummy.m in Sources */,
+				C2EA2AA5C668A36D327484E7 /* RECommonFunctions.m in Sources */,
+				BA4F65CBEDE3C048C1A87FB6 /* RESideMenu.m in Sources */,
+				BFE67E7E8CA706A71881CC8A /* UIViewController+RESideMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D7A2110A3300A3F2D4414C96 /* Sources */ = {
+		301431D79CA67CF8096F90A7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				748FA102ACEE1C8B556B5A6C /* JHKeyframeAnimation.m in Sources */,
-				57E7F07B8B2F59C3F04F1051 /* NSBKeyframeAnimationFunctions.c in Sources */,
-				CE264EF34FCD2FF493444877 /* Pods-JHChainableAnimations-dummy.m in Sources */,
-				039FF4F4CE633D3268D45A84 /* UIView+JHChainableAnimations.m in Sources */,
+				1DCAF5646A0F6B4E5AD0F658 /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EDD5B12A5954C65A0DD72CCA /* Sources */ = {
+		AEAAA6E562AB8CF5A819739F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCE0130BFAFCC9B4F65BB68D /* Pods-dummy.m in Sources */,
+				DA04B873D45F5937C9EA8C03 /* MBProgressHUD.m in Sources */,
+				99503AA2EF93E0CA3C0AC71D /* Pods-MBProgressHUD-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2B157506FA666FE65D50101 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEDD4B004F582223E2C44186 /* JHKeyframeAnimation.m in Sources */,
+				0F1CA1D1A47B267C26A28D7A /* NSBKeyframeAnimationFunctions.c in Sources */,
+				D5DE80898321CD83A0196A46 /* Pods-JHChainableAnimations-dummy.m in Sources */,
+				261F8F9D98EC340F374AC97F /* UIView+JHChainableAnimations.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1C181826752BD563E93CBAA2 /* PBXTargetDependency */ = {
+		28201B453B73D7E026E40BA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-MBProgressHUD";
+			target = 0E66CF7F3BADF489D99907B3 /* Pods-MBProgressHUD */;
+			targetProxy = FBC02FE8946BDD130EBC7F27 /* PBXContainerItemProxy */;
+		};
+		64D93CB1AF57803FA9160E54 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-JHChainableAnimations";
-			target = 8D8D21CCB67451ED37D24F4C /* Pods-JHChainableAnimations */;
-			targetProxy = 34B49146A678323EE3549D23 /* PBXContainerItemProxy */;
+			target = A6A3D6ECD1D840C565C52620 /* Pods-JHChainableAnimations */;
+			targetProxy = 9CBB27F01F52104219B33A27 /* PBXContainerItemProxy */;
 		};
-		F9C3B54F5572CD42505CB184 /* PBXTargetDependency */ = {
+		D07C0019D79DA35CE7EF4D4E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-RESideMenu";
-			target = 727EF36CB7D76DDC08EE7A15 /* Pods-RESideMenu */;
-			targetProxy = 790A1028762D4AE04DAE4FBD /* PBXContainerItemProxy */;
+			target = 024D3FF3BA2F67A2BD70E5D8 /* Pods-RESideMenu */;
+			targetProxy = 4FC802E0745F79B67165889E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0C9F55C91AA365764F465C7D /* Release */ = {
+		42A33A1C891F498C7D3A88C1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9CDA245B214402006797B7F1 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 9BC07EB9551ECACD2D16E65B /* Pods-JHChainableAnimations-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-JHChainableAnimations/Pods-JHChainableAnimations-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
-		13CC78889D7EDAFCFCB2CDC0 /* Release */ = {
+		656330F664FEA817C300D350 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E291D5B316BAC1BF1656BF3 /* Pods-RESideMenu-Private.xcconfig */;
+			baseConfigurationReference = 9BC07EB9551ECACD2D16E65B /* Pods-JHChainableAnimations-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-JHChainableAnimations/Pods-JHChainableAnimations-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7575BAF3FAF2F3516CE1D2C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C937F72E4A469DA4C5038C5 /* Pods-RESideMenu-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-RESideMenu/Pods-RESideMenu-prefix.pch";
@@ -426,9 +538,41 @@
 			};
 			name = Release;
 		};
-		16EBF4D06F1924C900B24DC5 /* Debug */ = {
+		7AA9AAB587EC0CF5E9CD2441 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 94EF7611F1B478FEFCA9642E /* Pods.debug.xcconfig */;
+			baseConfigurationReference = F10921DFC212D4EE4B00F387 /* Pods-MBProgressHUD-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-MBProgressHUD/Pods-MBProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		845FC47170DEB30B5BA589D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C937F72E4A469DA4C5038C5 /* Pods-RESideMenu-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-RESideMenu/Pods-RESideMenu-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9BCEEFFD4CF36B0DA5BA9A61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2921A29EB8BF40FFA50E23B4 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -442,7 +586,7 @@
 			};
 			name = Debug;
 		};
-		8575181F38E1F3CFB40D528D /* Release */ = {
+		A8BC68BBF20500DC193F8182 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -476,55 +620,7 @@
 			};
 			name = Release;
 		};
-		879C8262B5354C711F171119 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E291D5B316BAC1BF1656BF3 /* Pods-RESideMenu-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-RESideMenu/Pods-RESideMenu-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		8C2D38618AA1C8A176900749 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 077FBD2D0682A14B79EA4CDD /* Pods-JHChainableAnimations-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-JHChainableAnimations/Pods-JHChainableAnimations-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		CF52C7A0658DBFB43168C270 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 077FBD2D0682A14B79EA4CDD /* Pods-JHChainableAnimations-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-JHChainableAnimations/Pods-JHChainableAnimations-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		D940758D5DC9E35B12D09173 /* Debug */ = {
+		C59DADEEEA8E3DED13D4BB0A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -563,46 +659,87 @@
 			};
 			name = Debug;
 		};
+		D934EA3BA869E0399B6E03D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F10921DFC212D4EE4B00F387 /* Pods-MBProgressHUD-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-MBProgressHUD/Pods-MBProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F610ED0D4FAE142434C70531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B09F2FE6E51888194FE6818 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		18FD0045A1A6C2670A8CE3B2 /* Build configuration list for PBXProject "Pods" */ = {
+		0EFE2D596F4BA17B8E6226B3 /* Build configuration list for PBXNativeTarget "Pods-RESideMenu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D940758D5DC9E35B12D09173 /* Debug */,
-				8575181F38E1F3CFB40D528D /* Release */,
+				845FC47170DEB30B5BA589D7 /* Debug */,
+				7575BAF3FAF2F3516CE1D2C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		820EC7312101A9E23277D94F /* Build configuration list for PBXNativeTarget "Pods-JHChainableAnimations" */ = {
+		296A20C5D1942AFE8E462FEF /* Build configuration list for PBXNativeTarget "Pods-MBProgressHUD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8C2D38618AA1C8A176900749 /* Debug */,
-				CF52C7A0658DBFB43168C270 /* Release */,
+				7AA9AAB587EC0CF5E9CD2441 /* Debug */,
+				D934EA3BA869E0399B6E03D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EF3A42A350B90BBC987BC8F8 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		5CEB655D7D1B528224FF7853 /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				16EBF4D06F1924C900B24DC5 /* Debug */,
-				0C9F55C91AA365764F465C7D /* Release */,
+				9BCEEFFD4CF36B0DA5BA9A61 /* Debug */,
+				F610ED0D4FAE142434C70531 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FA450C318420BD5EED58789E /* Build configuration list for PBXNativeTarget "Pods-RESideMenu" */ = {
+		64A113C62CAE4D371CB28047 /* Build configuration list for PBXNativeTarget "Pods-JHChainableAnimations" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				879C8262B5354C711F171119 /* Debug */,
-				13CC78889D7EDAFCFCB2CDC0 /* Release */,
+				656330F664FEA817C300D350 /* Debug */,
+				42A33A1C891F498C7D3A88C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77F16ED31E0771D22B6E0457 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C59DADEEEA8E3DED13D4BB0A /* Debug */,
+				A8BC68BBF20500DC193F8182 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 6CBEBD9F68BE16A07CE497AB /* Project object */;
+	rootObject = 95EF2234CE7B6028CA8FC98E /* Project object */;
 }

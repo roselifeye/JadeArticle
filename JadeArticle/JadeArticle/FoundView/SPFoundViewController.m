@@ -21,7 +21,7 @@
 }
 
 - (void)initBeginView {
-    UIImage *bgImage = [UIImage imageNamed:@"LeftMenuBG"];
+    UIImage *bgImage = [UIImage imageNamed:@"MainMenuBG"];
     self.view.layer.contents = (id) bgImage.CGImage;
     [self.navigationController setNavigationBarHidden:YES];
     

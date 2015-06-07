@@ -55,16 +55,37 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     switch (indexPath.row) {
-        case 0:
-            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"firstViewController"]]
+        case 0: {
+            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"readView"]]
                                                          animated:YES];
             [self.sideMenuViewController hideMenuViewController];
+        }
             break;
-        case 1:
-            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"secondViewController"]]
+        case 1: {
+            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"myStoryView"]]
                                                          animated:YES];
             [self.sideMenuViewController hideMenuViewController];
+        }
             break;
+        case 2: {
+            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"myStoryView"]]
+                                                         animated:YES];
+            [self.sideMenuViewController hideMenuViewController];
+        }
+            break;
+        case 3: {
+            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"mainMenuVIew"]]
+                                                         animated:YES];
+            [self.sideMenuViewController hideMenuViewController];
+        }
+            break;
+        case 4: {
+            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"myquestionView"]]
+                                                         animated:YES];
+            [self.sideMenuViewController hideMenuViewController];
+        }
+            break;
+            
         default:
             break;
     }
