@@ -42,6 +42,19 @@
     self.tableView.tableHeaderView = headerView;
     self.tableView.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleWidth;
     originYConstraint.constant = (self.view.frame.size.height - 54*5 - 67)/2.f;
+    
+    [self addGestureToHeaderView];
+}
+
+- (void)addGestureToHeaderView {
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(displayMainMenuView:)];
+    [headerView addGestureRecognizer:tapGesture];
+}
+
+- (void)displayMainMenuView:(id)sender {
+    [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"mainMenuVIew"]]
+                                                 animated:YES];
+    [self.sideMenuViewController hideMenuViewController];
 }
 
 - (void)didReceiveMemoryWarning {

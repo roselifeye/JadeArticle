@@ -130,10 +130,44 @@
                     <view key="view" contentMode="scaleToFill" id="SXf-Og-34T">
                         <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZi-1g-foh">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="delegate" destination="eZe-6h-KeU" id="h5g-es-BxQ"/>
+                                </connections>
+                            </scrollView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCT-o4-X2B">
+                                <rect key="frame" x="15" y="20" width="45" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="DBe-yq-Oq5"/>
+                                    <constraint firstAttribute="height" constant="40" id="eas-z1-kWv"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="LeftNavigationICONBtn">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="leftMenu:" destination="siz-hR-ouq" eventType="touchUpInside" id="0mx-NV-57P"/>
+                                    <action selector="leftMenu:" destination="eZe-6h-KeU" eventType="touchUpInside" id="8FC-g2-Gzc"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BCT-o4-X2B" firstAttribute="top" secondItem="tK6-FM-0Bw" secondAttribute="bottom" id="0GJ-QD-mbM"/>
+                            <constraint firstItem="BCT-o4-X2B" firstAttribute="leading" secondItem="SXf-Og-34T" secondAttribute="leading" constant="15" id="BM8-qX-yuG"/>
+                            <constraint firstItem="iZi-1g-foh" firstAttribute="leading" secondItem="SXf-Og-34T" secondAttribute="leading" id="Jcl-Cg-KJc"/>
+                            <constraint firstAttribute="trailing" secondItem="iZi-1g-foh" secondAttribute="trailing" id="Zl2-eu-8ex"/>
+                            <constraint firstItem="iZi-1g-foh" firstAttribute="top" secondItem="SXf-Og-34T" secondAttribute="top" id="b4E-Eq-Vn5"/>
+                            <constraint firstItem="xz7-vc-t4V" firstAttribute="top" secondItem="iZi-1g-foh" secondAttribute="bottom" id="geK-cC-h7a"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="SbI-dc-DvO"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="myStoryScrollView" destination="iZi-1g-foh" id="TDx-Xj-UKr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qSr-aK-bCc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

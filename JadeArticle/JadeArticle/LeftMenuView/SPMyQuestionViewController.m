@@ -13,13 +13,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    UIImage *bgImage = [UIImage imageNamed:@"MainMenuBG"];
-    self.view.layer.contents = (id) bgImage.CGImage;
-    [self.navigationController setNavigationBarHidden:YES];
+    [self initBeginView];
 }
 
 - (IBAction)leftMenu:(id)sender {
     [self.sideMenuViewController presentLeftMenuViewController];
+}
+
+- (void)initBeginView {
+    UIImage *bgImage = [UIImage imageNamed:@"MainMenuBG"];
+    self.view.layer.contents = (id) bgImage.CGImage;
+    [self.navigationController setNavigationBarHidden:YES];
 }
 
 @end
