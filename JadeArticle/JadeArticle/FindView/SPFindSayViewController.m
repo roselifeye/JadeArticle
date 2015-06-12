@@ -57,12 +57,6 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-- (void)initBeginView {
-    UIImage *bgImage = [UIImage imageNamed:@"MainMenuBG"];
-    self.view.layer.contents = (id) bgImage.CGImage;
-    [self.navigationController setNavigationBarHidden:YES];
-}
-
 - (void)addBorderToView:(UIView *)view {
     [view.layer setBorderColor:RGBA(0, 127, 85, 1).CGColor];
     [view.layer setBorderWidth:2.0f];

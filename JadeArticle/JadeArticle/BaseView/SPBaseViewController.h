@@ -10,4 +10,6 @@
 
 @interface SPBaseViewController : UIViewController
 
+- (void)initBeginView;
+
 @end

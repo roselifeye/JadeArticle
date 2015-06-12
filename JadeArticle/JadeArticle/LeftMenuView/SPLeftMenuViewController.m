@@ -8,6 +8,7 @@
 
 #import "SPLeftMenuViewController.h"
 #import <UIViewController+RESideMenu.h>
+#import "SPMyStoryViewController.h"
 
 @interface SPLeftMenuViewController () {
     IBOutlet UIView *headerView;
@@ -75,13 +76,17 @@
         }
             break;
         case 1: {
-            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"myStoryView"]]
+            SPMyStoryViewController *storyView = [self.storyboard instantiateViewControllerWithIdentifier:@"myStoryView"];
+            storyView.defaultFootStr = @"下拉，更多我的故事";
+            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:storyView]
                                                          animated:YES];
             [self.sideMenuViewController hideMenuViewController];
         }
             break;
         case 2: {
-            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"myStoryView"]]
+            SPMyStoryViewController *storyView = [self.storyboard instantiateViewControllerWithIdentifier:@"myStoryView"];
+            storyView.defaultFootStr = @"下拉，更多我的收藏";
+            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:storyView]
                                                          animated:YES];
             [self.sideMenuViewController hideMenuViewController];
         }

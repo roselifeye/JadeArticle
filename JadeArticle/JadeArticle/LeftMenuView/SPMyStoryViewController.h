@@ -10,4 +10,6 @@
 
 @interface SPMyStoryViewController : UIViewController
 
+@property (nonatomic, assign) NSString *defaultFootStr;
+
 @end
