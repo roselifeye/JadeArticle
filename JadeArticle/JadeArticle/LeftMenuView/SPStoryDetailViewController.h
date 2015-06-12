@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SPStoryDetailViewController : SPBaseViewController
+@interface SPStoryDetailViewController : UIViewController
+
+@property (nonatomic, weak) IBOutlet UIScrollView *contentScroll;
 
 @end

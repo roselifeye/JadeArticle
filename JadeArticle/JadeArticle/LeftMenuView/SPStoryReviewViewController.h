@@ -8,6 +8,8 @@
 
 #import "SPBaseViewController.h"
 
-@interface SPStoryReviewViewController : SPBaseViewController
+@interface SPStoryReviewViewController : SPBaseViewController <UITableViewDataSource, UITableViewDelegate>
+
+@property (nonatomic, weak) IBOutlet UITableView *reviewTable;
 
 @end

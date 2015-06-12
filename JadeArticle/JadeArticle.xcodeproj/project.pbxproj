@@ -10,6 +10,8 @@
 		334E0C0F0F672E63B7BDF2ED /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3721B3B8E1DB7B5F304943F4 /* libPods.a */; };
 		5B2FC92B1B2A4F74009BAB01 /* SPStoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2FC92A1B2A4F74009BAB01 /* SPStoryDetailViewController.m */; };
 		5B2FC92E1B2A59A5009BAB01 /* SPStoryReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2FC92D1B2A59A5009BAB01 /* SPStoryReviewViewController.m */; };
+		5B2FC9321B2A6712009BAB01 /* SPShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2FC9311B2A6712009BAB01 /* SPShareView.m */; };
+		5B2FC9351B2A894E009BAB01 /* SPReviewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2FC9341B2A894E009BAB01 /* SPReviewTableViewCell.m */; };
 		5B33C8DE1B20BE1700CF28BE /* SPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B33C8DD1B20BE1700CF28BE /* SPMainViewController.m */; };
 		5B33C8E11B20BE5000CF28BE /* SPLeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B33C8E01B20BE5000CF28BE /* SPLeftMenuViewController.m */; };
 		5B33C8E61B20CC6900CF28BE /* DSNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B33C8E51B20CC6900CF28BE /* DSNavigationBar.m */; };
@@ -57,6 +59,10 @@
 		5B2FC92A1B2A4F74009BAB01 /* SPStoryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPStoryDetailViewController.m; path = LeftMenuView/SPStoryDetailViewController.m; sourceTree = "<group>"; };
 		5B2FC92C1B2A59A5009BAB01 /* SPStoryReviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPStoryReviewViewController.h; path = LeftMenuView/SPStoryReviewViewController.h; sourceTree = "<group>"; };
 		5B2FC92D1B2A59A5009BAB01 /* SPStoryReviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPStoryReviewViewController.m; path = LeftMenuView/SPStoryReviewViewController.m; sourceTree = "<group>"; };
+		5B2FC9301B2A6712009BAB01 /* SPShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPShareView.h; path = LeftMenuView/SPShareView.h; sourceTree = "<group>"; };
+		5B2FC9311B2A6712009BAB01 /* SPShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPShareView.m; path = LeftMenuView/SPShareView.m; sourceTree = "<group>"; };
+		5B2FC9331B2A894E009BAB01 /* SPReviewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPReviewTableViewCell.h; path = LeftMenuView/SPReviewTableViewCell.h; sourceTree = "<group>"; };
+		5B2FC9341B2A894E009BAB01 /* SPReviewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPReviewTableViewCell.m; path = LeftMenuView/SPReviewTableViewCell.m; sourceTree = "<group>"; };
 		5B33C8DC1B20BE1700CF28BE /* SPMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPMainViewController.h; path = MainView/SPMainViewController.h; sourceTree = "<group>"; };
 		5B33C8DD1B20BE1700CF28BE /* SPMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPMainViewController.m; path = MainView/SPMainViewController.m; sourceTree = "<group>"; };
 		5B33C8DF1B20BE5000CF28BE /* SPLeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPLeftMenuViewController.h; path = LeftMenuView/SPLeftMenuViewController.h; sourceTree = "<group>"; };
@@ -142,10 +148,14 @@
 			children = (
 				5B3447721B23BEC4004E6FCD /* SPMyStoryViewController.h */,
 				5B3447731B23BEC4004E6FCD /* SPMyStoryViewController.m */,
+				5B2FC9301B2A6712009BAB01 /* SPShareView.h */,
+				5B2FC9311B2A6712009BAB01 /* SPShareView.m */,
 				5B2FC9291B2A4F74009BAB01 /* SPStoryDetailViewController.h */,
 				5B2FC92A1B2A4F74009BAB01 /* SPStoryDetailViewController.m */,
 				5B2FC92C1B2A59A5009BAB01 /* SPStoryReviewViewController.h */,
 				5B2FC92D1B2A59A5009BAB01 /* SPStoryReviewViewController.m */,
+				5B2FC9331B2A894E009BAB01 /* SPReviewTableViewCell.h */,
+				5B2FC9341B2A894E009BAB01 /* SPReviewTableViewCell.m */,
 			);
 			name = SPStoryView;
 			sourceTree = "<group>";
@@ -500,6 +510,7 @@
 				5B33C8E61B20CC6900CF28BE /* DSNavigationBar.m in Sources */,
 				5B33C8DE1B20BE1700CF28BE /* SPMainViewController.m in Sources */,
 				5B5780191B2137DC006B391D /* SPBaseViewController.m in Sources */,
+				5B2FC9351B2A894E009BAB01 /* SPReviewTableViewCell.m in Sources */,
 				5B33C8ED1B20D65D00CF28BE /* UINavigationItem+CustomItem.m in Sources */,
 				5BAB35EA1B1C9896005634D1 /* ViewController.m in Sources */,
 				5B33C8E11B20BE5000CF28BE /* SPLeftMenuViewController.m in Sources */,
@@ -511,6 +522,7 @@
 				5B2FC92B1B2A4F74009BAB01 /* SPStoryDetailViewController.m in Sources */,
 				5B57801D1B213E36006B391D /* UIViewController+Additions.m in Sources */,
 				5B2FC92E1B2A59A5009BAB01 /* SPStoryReviewViewController.m in Sources */,
+				5B2FC9321B2A6712009BAB01 /* SPShareView.m in Sources */,
 				5BAC57FD1B220206008A45F2 /* SPReadDetailViewController.m in Sources */,
 				5BAB35E71B1C9896005634D1 /* AppDelegate.m in Sources */,
 				5B3447711B23BBBB004E6FCD /* SPMyQuestionViewController.m in Sources */,

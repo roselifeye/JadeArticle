@@ -11,6 +11,8 @@
 #import "SPStoryDetailViewController.h"
 #import "SPStoryReviewViewController.h"
 
+#import "SPShareView.h"
+
 @interface SPMyStoryViewController ()<UIScrollViewDelegate> {
     UIView *headerView;
     UIView *footerView;
@@ -165,6 +167,8 @@
 }
 
 - (void)shareBtnClicked:(UIButton *)sender {
+    SPShareView *shareView = [[SPShareView alloc] initWithFrame:self.view.frame];
+    [self.view addSubview:shareView];
 }
 
 - (void)collectBtnClicked:(UIButton *)sender {
