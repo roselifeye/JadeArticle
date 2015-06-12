@@ -24,6 +24,9 @@
 		5B36B9E61B20DA2400990359 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B36B9E51B20DA2400990359 /* QuartzCore.framework */; };
 		5B4399041B20FD56004BA36F /* SPRequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B4399031B20FD56004BA36F /* SPRequestViewController.m */; };
 		5B4399081B2128BD004BA36F /* SPSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B4399071B2128BD004BA36F /* SPSearchViewController.m */; };
+		5B568EDC1B2B31EC00984683 /* UILabel+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B568EDB1B2B31EC00984683 /* UILabel+Additions.m */; };
+		5B568EDF1B2B441100984683 /* SPMileInsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B568EDE1B2B441100984683 /* SPMileInsideViewController.m */; };
+		5B568EE21B2B442E00984683 /* SPAnywhereViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B568EE11B2B442E00984683 /* SPAnywhereViewController.m */; };
 		5B57800D1B2135B2006B391D /* SPReadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B57800C1B2135B2006B391D /* SPReadViewController.m */; };
 		5B5780111B2136F7006B391D /* SPFindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5780101B2136F7006B391D /* SPFindViewController.m */; };
 		5B5780151B21371E006B391D /* SPFoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5780141B21371E006B391D /* SPFoundViewController.m */; };
@@ -87,6 +90,12 @@
 		5B4399031B20FD56004BA36F /* SPRequestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPRequestViewController.m; path = RequestView/SPRequestViewController.m; sourceTree = "<group>"; };
 		5B4399061B2128BD004BA36F /* SPSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPSearchViewController.h; path = SearchView/SPSearchViewController.h; sourceTree = "<group>"; };
 		5B4399071B2128BD004BA36F /* SPSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPSearchViewController.m; path = SearchView/SPSearchViewController.m; sourceTree = "<group>"; };
+		5B568EDA1B2B31EC00984683 /* UILabel+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+Additions.h"; path = "Additions/UILabel+Additions.h"; sourceTree = "<group>"; };
+		5B568EDB1B2B31EC00984683 /* UILabel+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Additions.m"; path = "Additions/UILabel+Additions.m"; sourceTree = "<group>"; };
+		5B568EDD1B2B441100984683 /* SPMileInsideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPMileInsideViewController.h; path = FoundView/SPMileInsideViewController.h; sourceTree = "<group>"; };
+		5B568EDE1B2B441100984683 /* SPMileInsideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPMileInsideViewController.m; path = FoundView/SPMileInsideViewController.m; sourceTree = "<group>"; };
+		5B568EE01B2B442E00984683 /* SPAnywhereViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPAnywhereViewController.h; path = FoundView/SPAnywhereViewController.h; sourceTree = "<group>"; };
+		5B568EE11B2B442E00984683 /* SPAnywhereViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPAnywhereViewController.m; path = FoundView/SPAnywhereViewController.m; sourceTree = "<group>"; };
 		5B57800B1B2135B2006B391D /* SPReadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPReadViewController.h; path = ReadView/SPReadViewController.h; sourceTree = "<group>"; };
 		5B57800C1B2135B2006B391D /* SPReadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPReadViewController.m; path = ReadView/SPReadViewController.m; sourceTree = "<group>"; };
 		5B57800F1B2136F7006B391D /* SPFindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPFindViewController.h; path = FindView/SPFindViewController.h; sourceTree = "<group>"; };
@@ -254,6 +263,10 @@
 			children = (
 				5B5780131B21371E006B391D /* SPFoundViewController.h */,
 				5B5780141B21371E006B391D /* SPFoundViewController.m */,
+				5B568EDD1B2B441100984683 /* SPMileInsideViewController.h */,
+				5B568EDE1B2B441100984683 /* SPMileInsideViewController.m */,
+				5B568EE01B2B442E00984683 /* SPAnywhereViewController.h */,
+				5B568EE11B2B442E00984683 /* SPAnywhereViewController.m */,
 			);
 			name = FoundView;
 			sourceTree = "<group>";
@@ -270,6 +283,8 @@
 		5B57801A1B213DF6006B391D /* Additions */ = {
 			isa = PBXGroup;
 			children = (
+				5B568EDA1B2B31EC00984683 /* UILabel+Additions.h */,
+				5B568EDB1B2B31EC00984683 /* UILabel+Additions.m */,
 				5B57801B1B213E36006B391D /* UIViewController+Additions.h */,
 				5B57801C1B213E36006B391D /* UIViewController+Additions.m */,
 			);
@@ -513,10 +528,12 @@
 				5B2FC9351B2A894E009BAB01 /* SPReviewTableViewCell.m in Sources */,
 				5B33C8ED1B20D65D00CF28BE /* UINavigationItem+CustomItem.m in Sources */,
 				5BAB35EA1B1C9896005634D1 /* ViewController.m in Sources */,
+				5B568EDF1B2B441100984683 /* SPMileInsideViewController.m in Sources */,
 				5B33C8E11B20BE5000CF28BE /* SPLeftMenuViewController.m in Sources */,
 				5B5780151B21371E006B391D /* SPFoundViewController.m in Sources */,
 				5BAC58031B227415008A45F2 /* SPCameraView.m in Sources */,
 				5B3447771B23CA65004E6FCD /* SPFindListenViewController.m in Sources */,
+				5B568EE21B2B442E00984683 /* SPAnywhereViewController.m in Sources */,
 				5BF296D21B22A46500FE1D6D /* SPPublishPhotoViewController.m in Sources */,
 				5B34477A1B23CA7B004E6FCD /* SPFindSayViewController.m in Sources */,
 				5B2FC92B1B2A4F74009BAB01 /* SPStoryDetailViewController.m in Sources */,
@@ -530,6 +547,7 @@
 				5B57800D1B2135B2006B391D /* SPReadViewController.m in Sources */,
 				5B33C8EC1B20D65D00CF28BE /* CustomBarItem.m in Sources */,
 				5BAB35E41B1C9896005634D1 /* main.m in Sources */,
+				5B568EDC1B2B31EC00984683 /* UILabel+Additions.m in Sources */,
 				5B3447741B23BEC4004E6FCD /* SPMyStoryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

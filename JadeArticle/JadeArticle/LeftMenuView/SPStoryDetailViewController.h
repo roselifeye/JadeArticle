@@ -12,4 +12,6 @@
 
 @property (nonatomic, weak) IBOutlet UIScrollView *contentScroll;
 
+@property (nonatomic, retain) NSDictionary *contentDic;
+
 @end

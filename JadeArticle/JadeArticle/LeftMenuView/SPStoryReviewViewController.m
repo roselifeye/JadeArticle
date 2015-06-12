@@ -52,10 +52,7 @@
     [cell.contentLabel setText:[dic objectForKey:@"content"]];
     
     NSString *timeStr = [dic objectForKey:@"time"];
-    CGRect rect = [timeStr boundingRectWithSize:CGSizeMake(MAXFLOAT, 21)//限制最大的宽度和高度
-                                       options:NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesFontLeading  |NSStringDrawingUsesLineFragmentOrigin//采用换行模式
-                                    attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14.f]}//传人的字体字典
-                                       context:nil];
+    CGRect rect = [cell.timeLabel caculateLabelSizeWithContent:timeStr andOrientation:horizontal];
     [cell.timeLabel setText:timeStr];
     cell.timeLabelWidth.constant = rect.size.width;
     return cell;
