@@ -7,6 +7,7 @@
 //
 
 #import "SPAnywhereViewController.h"
+#import "SPFoundChatViewController.h"
 
 @implementation SPAnywhereViewController
 
@@ -19,5 +20,10 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+- (IBAction)iconBtnClicked:(UIButton *)sender {
+    SPFoundChatViewController *chatView = [self.storyboard instantiateViewControllerWithIdentifier:@"chatView"];
+    chatView.iconNumber = sender.tag;
+    [self.navigationController pushViewController:chatView animated:YES];
+}
 
 @end

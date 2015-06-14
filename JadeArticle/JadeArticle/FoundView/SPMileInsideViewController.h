@@ -10,4 +10,6 @@
 
 @interface SPMileInsideViewController : SPBaseViewController
 
+@property (weak, nonatomic) IBOutlet UIImageView *mileInsideBG;
+
 @end

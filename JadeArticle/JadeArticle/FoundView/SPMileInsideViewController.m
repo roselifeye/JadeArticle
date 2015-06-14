@@ -7,6 +7,7 @@
 //
 
 #import "SPMileInsideViewController.h"
+#import "SPFoundChatViewController.h"
 
 @implementation SPMileInsideViewController
 
@@ -17,6 +18,12 @@
 
 - (void)goBack {
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (IBAction)iconBtnClicked:(UIButton *)sender {
+    SPFoundChatViewController *chatView = [self.storyboard instantiateViewControllerWithIdentifier:@"chatView"];
+    chatView.iconNumber = sender.tag;
+    [self.navigationController pushViewController:chatView animated:YES];
 }
 
 @end

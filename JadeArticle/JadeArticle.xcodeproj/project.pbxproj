@@ -34,6 +34,7 @@
 		5B57801D1B213E36006B391D /* UIViewController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B57801C1B213E36006B391D /* UIViewController+Additions.m */; };
 		5B8D65C11B2E114400B009FF /* searchVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5B8D65C01B2E114400B009FF /* searchVideo.mp4 */; };
 		5B8D65C31B2E124F00B009FF /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B8D65C21B2E124F00B009FF /* MediaPlayer.framework */; };
+		5B8D65C61B2E1FA100B009FF /* SPFoundChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8D65C51B2E1FA100B009FF /* SPFoundChatViewController.m */; };
 		5BAB35E41B1C9896005634D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB35E31B1C9896005634D1 /* main.m */; };
 		5BAB35E71B1C9896005634D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB35E61B1C9896005634D1 /* AppDelegate.m */; };
 		5BAB35EA1B1C9896005634D1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB35E91B1C9896005634D1 /* ViewController.m */; };
@@ -110,6 +111,8 @@
 		5B57801C1B213E36006B391D /* UIViewController+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Additions.m"; path = "Additions/UIViewController+Additions.m"; sourceTree = "<group>"; };
 		5B8D65C01B2E114400B009FF /* searchVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = searchVideo.mp4; sourceTree = "<group>"; };
 		5B8D65C21B2E124F00B009FF /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		5B8D65C41B2E1FA100B009FF /* SPFoundChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPFoundChatViewController.h; path = FoundView/SPFoundChatViewController.h; sourceTree = "<group>"; };
+		5B8D65C51B2E1FA100B009FF /* SPFoundChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPFoundChatViewController.m; path = FoundView/SPFoundChatViewController.m; sourceTree = "<group>"; };
 		5BAB35DE1B1C9896005634D1 /* JadeArticle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JadeArticle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BAB35E21B1C9896005634D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BAB35E31B1C9896005634D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -272,6 +275,8 @@
 				5B568EDE1B2B441100984683 /* SPMileInsideViewController.m */,
 				5B568EE01B2B442E00984683 /* SPAnywhereViewController.h */,
 				5B568EE11B2B442E00984683 /* SPAnywhereViewController.m */,
+				5B8D65C41B2E1FA100B009FF /* SPFoundChatViewController.h */,
+				5B8D65C51B2E1FA100B009FF /* SPFoundChatViewController.m */,
 			);
 			name = FoundView;
 			sourceTree = "<group>";
@@ -553,6 +558,7 @@
 				5B3447711B23BBBB004E6FCD /* SPMyQuestionViewController.m in Sources */,
 				5B4399081B2128BD004BA36F /* SPSearchViewController.m in Sources */,
 				5B57800D1B2135B2006B391D /* SPReadViewController.m in Sources */,
+				5B8D65C61B2E1FA100B009FF /* SPFoundChatViewController.m in Sources */,
 				5B33C8EC1B20D65D00CF28BE /* CustomBarItem.m in Sources */,
 				5BAB35E41B1C9896005634D1 /* main.m in Sources */,
 				5B568EDC1B2B31EC00984683 /* UILabel+Additions.m in Sources */,

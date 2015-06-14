@@ -44,7 +44,7 @@
 }
 
 - (void)initBeginView {
-    UIImage *bgImage = [UIImage imageNamed:@"LeftMenuBG"];
+    UIImage *bgImage = [UIImage imageNamed:@"MainMenuBG"];
     self.view.layer.contents = (id) bgImage.CGImage;
     [self.navigationController setNavigationBarHidden:YES];
     
@@ -68,7 +68,7 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self
                                                     name:MPMoviePlayerPlaybackDidFinishNotification
                                                   object:theMovie];
-    //[theMovie.view removeFromSuperview];
+    [theMovie.view removeFromSuperview];
     [self.navigationController popViewControllerAnimated:YES];
 }
 
