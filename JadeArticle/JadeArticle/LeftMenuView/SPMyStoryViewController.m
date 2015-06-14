@@ -149,7 +149,7 @@
     }
     UIView *storyView = [[UIView alloc] initWithFrame:frame];
     [storyView setBackgroundColor:[UIColor clearColor]];
-    [self addBorderToView:storyView];
+    //[self addBorderToView:storyView];
     [myStoryScrollView addSubview:storyView];
     
     [self addGestureToView:storyView];
@@ -158,6 +158,17 @@
     [self initAdditionViewWithFrame:frame];
     
     myStoryScrollView.contentSize = CGSizeMake(CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame)*(offset+1));
+    
+    UIImageView *wordImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 20, 355, 472)];
+    [wordImage setImage:[UIImage imageNamed:@"storyWord"]];
+    [storyView addSubview:wordImage];
+    /*
+    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake((CGRectGetWidth(storyView.frame) - 23)/2.f, 10, 23, 60)];
+    //    [titleLabel setText:@"故事"];
+    NSDictionary *attrDict1 = @{ NSVerticalGlyphFormAttributeName: @"0" };
+    [titleLabel setAttributedText:[[NSAttributedString alloc] initWithString:@"故事" attributes: attrDict1]];
+    [storyView addSubview:titleLabel];
+     */
 }
 
 - (void)addGestureToView:(UIView *)view {

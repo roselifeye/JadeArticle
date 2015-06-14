@@ -35,6 +35,7 @@
 		5B8D65C11B2E114400B009FF /* searchVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5B8D65C01B2E114400B009FF /* searchVideo.mp4 */; };
 		5B8D65C31B2E124F00B009FF /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B8D65C21B2E124F00B009FF /* MediaPlayer.framework */; };
 		5B8D65C61B2E1FA100B009FF /* SPFoundChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8D65C51B2E1FA100B009FF /* SPFoundChatViewController.m */; };
+		5B8D65C91B2E30C700B009FF /* SPPublishDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8D65C81B2E30C700B009FF /* SPPublishDetailViewController.m */; };
 		5BAB35E41B1C9896005634D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB35E31B1C9896005634D1 /* main.m */; };
 		5BAB35E71B1C9896005634D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB35E61B1C9896005634D1 /* AppDelegate.m */; };
 		5BAB35EA1B1C9896005634D1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB35E91B1C9896005634D1 /* ViewController.m */; };
@@ -113,6 +114,8 @@
 		5B8D65C21B2E124F00B009FF /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		5B8D65C41B2E1FA100B009FF /* SPFoundChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPFoundChatViewController.h; path = FoundView/SPFoundChatViewController.h; sourceTree = "<group>"; };
 		5B8D65C51B2E1FA100B009FF /* SPFoundChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPFoundChatViewController.m; path = FoundView/SPFoundChatViewController.m; sourceTree = "<group>"; };
+		5B8D65C71B2E30C700B009FF /* SPPublishDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPPublishDetailViewController.h; path = RequestView/SPPublishDetailViewController.h; sourceTree = "<group>"; };
+		5B8D65C81B2E30C700B009FF /* SPPublishDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPPublishDetailViewController.m; path = RequestView/SPPublishDetailViewController.m; sourceTree = "<group>"; };
 		5BAB35DE1B1C9896005634D1 /* JadeArticle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JadeArticle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BAB35E21B1C9896005634D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BAB35E31B1C9896005634D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -229,6 +232,8 @@
 				5BAC57FF1B2270F9008A45F2 /* SPCameraViewController.m */,
 				5BF296D01B22A46500FE1D6D /* SPPublishPhotoViewController.h */,
 				5BF296D11B22A46500FE1D6D /* SPPublishPhotoViewController.m */,
+				5B8D65C71B2E30C700B009FF /* SPPublishDetailViewController.h */,
+				5B8D65C81B2E30C700B009FF /* SPPublishDetailViewController.m */,
 			);
 			name = RequetView;
 			sourceTree = "<group>";
@@ -538,6 +543,7 @@
 				5B33C8E61B20CC6900CF28BE /* DSNavigationBar.m in Sources */,
 				5B33C8DE1B20BE1700CF28BE /* SPMainViewController.m in Sources */,
 				5B5780191B2137DC006B391D /* SPBaseViewController.m in Sources */,
+				5B8D65C91B2E30C700B009FF /* SPPublishDetailViewController.m in Sources */,
 				5B2FC9351B2A894E009BAB01 /* SPReviewTableViewCell.m in Sources */,
 				5B33C8ED1B20D65D00CF28BE /* UINavigationItem+CustomItem.m in Sources */,
 				5BAB35EA1B1C9896005634D1 /* ViewController.m in Sources */,
@@ -691,6 +697,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/JadeArticle/JadeArticlePrefixHeader.pch";
 				INFOPLIST_FILE = JadeArticle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -703,6 +710,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/JadeArticle/JadeArticlePrefixHeader.pch";
 				INFOPLIST_FILE = JadeArticle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

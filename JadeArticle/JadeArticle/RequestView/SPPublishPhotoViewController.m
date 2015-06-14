@@ -7,6 +7,7 @@
 //
 
 #import "SPPublishPhotoViewController.h"
+#import "SPPublishDetailViewController.h"
 
 @interface SPPublishPhotoViewController ()
 
@@ -52,6 +53,11 @@
 - (void)addBorderToView:(UIView *)view {
     [view.layer setBorderColor:RGBA(0, 127, 85, 1).CGColor];
     [view.layer setBorderWidth:2.0f];
+}
+
+- (IBAction)publishBtnClicked:(id)sender {
+    SPPublishDetailViewController *detailView = [self.storyboard instantiateViewControllerWithIdentifier:@"publishDetailView"];
+    [self.navigationController pushViewController:detailView animated:YES];
 }
 
 

@@ -2136,6 +2136,9 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="publishBtnClicked:" destination="hau-68-6Yv" eventType="touchUpInside" id="qDa-mQ-dDq"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vfn-va-93f" userLabel="questionDetailView">
                                 <rect key="frame" x="10" y="126" width="580" height="374"/>
@@ -2237,6 +2240,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <segue destination="gvI-WF-Jwx" kind="show" id="6ml-qT-F6E"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <animations/>
@@ -2356,6 +2362,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Krp-VA-lH7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2333" y="-3479"/>
+        </scene>
+        <!--Publish Detail View Controller-->
+        <scene sceneID="L0k-U1-dFc">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bkK-dS-Qfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController restorationIdentifier="publishDetailView" storyboardIdentifier="publishDetailView" id="gvI-WF-Jwx" customClass="SPPublishDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mV0-zW-hta"/>
+                        <viewControllerLayoutGuide type="bottom" id="FEe-7d-QGg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rRx-m2-cTA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGJ-CU-xei">
+                                <rect key="frame" x="15" y="55" width="570" height="545"/>
+                                <animations/>
+                            </scrollView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FEe-7d-QGg" firstAttribute="top" secondItem="IGJ-CU-xei" secondAttribute="bottom" id="G0O-A8-PZj"/>
+                            <constraint firstAttribute="trailing" secondItem="IGJ-CU-xei" secondAttribute="trailing" constant="15" id="Hdk-Zb-JdM"/>
+                            <constraint firstItem="IGJ-CU-xei" firstAttribute="leading" secondItem="rRx-m2-cTA" secondAttribute="leading" constant="15" id="I43-Sw-nSX"/>
+                            <constraint firstAttribute="centerX" secondItem="IGJ-CU-xei" secondAttribute="centerX" id="aN4-iE-ebX"/>
+                            <constraint firstItem="IGJ-CU-xei" firstAttribute="top" secondItem="mV0-zW-hta" secondAttribute="bottom" constant="35" id="d8I-Bi-r1N"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentScroll" destination="IGJ-CU-xei" id="pFR-4J-x0K"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="3059" y="-3479"/>
         </scene>
         <!--Read Detail View Controller-->
         <scene sceneID="Za5-4y-uVT">
