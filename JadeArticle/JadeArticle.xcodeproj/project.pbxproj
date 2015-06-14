@@ -32,6 +32,8 @@
 		5B5780151B21371E006B391D /* SPFoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5780141B21371E006B391D /* SPFoundViewController.m */; };
 		5B5780191B2137DC006B391D /* SPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5780181B2137DC006B391D /* SPBaseViewController.m */; };
 		5B57801D1B213E36006B391D /* UIViewController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B57801C1B213E36006B391D /* UIViewController+Additions.m */; };
+		5B8D65C11B2E114400B009FF /* searchVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5B8D65C01B2E114400B009FF /* searchVideo.mp4 */; };
+		5B8D65C31B2E124F00B009FF /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B8D65C21B2E124F00B009FF /* MediaPlayer.framework */; };
 		5BAB35E41B1C9896005634D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB35E31B1C9896005634D1 /* main.m */; };
 		5BAB35E71B1C9896005634D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB35E61B1C9896005634D1 /* AppDelegate.m */; };
 		5BAB35EA1B1C9896005634D1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB35E91B1C9896005634D1 /* ViewController.m */; };
@@ -106,6 +108,8 @@
 		5B5780181B2137DC006B391D /* SPBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPBaseViewController.m; path = BaseView/SPBaseViewController.m; sourceTree = "<group>"; };
 		5B57801B1B213E36006B391D /* UIViewController+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Additions.h"; path = "Additions/UIViewController+Additions.h"; sourceTree = "<group>"; };
 		5B57801C1B213E36006B391D /* UIViewController+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Additions.m"; path = "Additions/UIViewController+Additions.m"; sourceTree = "<group>"; };
+		5B8D65C01B2E114400B009FF /* searchVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = searchVideo.mp4; sourceTree = "<group>"; };
+		5B8D65C21B2E124F00B009FF /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		5BAB35DE1B1C9896005634D1 /* JadeArticle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JadeArticle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BAB35E21B1C9896005634D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BAB35E31B1C9896005634D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -137,6 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B8D65C31B2E124F00B009FF /* MediaPlayer.framework in Frameworks */,
 				5B36B9E61B20DA2400990359 /* QuartzCore.framework in Frameworks */,
 				334E0C0F0F672E63B7BDF2ED /* libPods.a in Frameworks */,
 			);
@@ -334,6 +339,7 @@
 				5BAB35EB1B1C9896005634D1 /* Main.storyboard */,
 				5BAB35EE1B1C9896005634D1 /* Images.xcassets */,
 				5BAB35F01B1C9896005634D1 /* LaunchScreen.xib */,
+				5B8D65C01B2E114400B009FF /* searchVideo.mp4 */,
 				5BAB35E11B1C9896005634D1 /* Supporting Files */,
 			);
 			path = JadeArticle;
@@ -369,6 +375,7 @@
 		5DD06B37C5F6AC675024DDC9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5B8D65C21B2E124F00B009FF /* MediaPlayer.framework */,
 				5B36B9E51B20DA2400990359 /* QuartzCore.framework */,
 				3721B3B8E1DB7B5F304943F4 /* libPods.a */,
 			);
@@ -466,6 +473,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B8D65C11B2E114400B009FF /* searchVideo.mp4 in Resources */,
 				5BAB35ED1B1C9896005634D1 /* Main.storyboard in Resources */,
 				5BAB35F21B1C9896005634D1 /* LaunchScreen.xib in Resources */,
 				5BAB35EF1B1C9896005634D1 /* Images.xcassets in Resources */,

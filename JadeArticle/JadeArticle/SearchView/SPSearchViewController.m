@@ -7,8 +7,11 @@
 //
 
 #import "SPSearchViewController.h"
+#import <MediaPlayer/MediaPlayer.h>
 
-@interface SPSearchViewController ()
+@interface SPSearchViewController () <MPMediaPickerControllerDelegate>
+
+@property (nonatomic, strong) MPMoviePlayerController *movie;
 
 @end
 
@@ -18,6 +21,26 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self initBeginView];
+    
+    //视频文件路径
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"searchVideo" ofType:@"mp4"];
+    //视频URL
+    NSURL *url = [NSURL fileURLWithPath:path];
+    //视频播放对象
+    _movie = [[MPMoviePlayerController alloc] initWithContentURL:url];
+    [_movie prepareToPlay];
+    [self.view addSubview:_movie.view];
+    _movie.shouldAutoplay=YES;
+    [_movie setControlStyle:MPMovieControlStyleNone];
+    [_movie setFullscreen:YES];
+    [_movie.view setFrame:self.view.bounds];
+    
+    // 注册一个播放结束的通知
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(myMovieFinishedCallback:)
+                                                 name:MPMoviePlayerPlaybackDidFinishNotification
+                                               object:_movie];
+    [_movie play];
 }
 
 - (void)initBeginView {
@@ -25,11 +48,28 @@
     self.view.layer.contents = (id) bgImage.CGImage;
     [self.navigationController setNavigationBarHidden:YES];
     
-    
+    /*
     [self curtainRevealViewFromView:[self createDoorViewWithBGImageName:@"MainMenuBG" andDoorknobImageName:@"doorknob"]
                   ToDestinationView:self.view
                    andLogoImageView:[self createDoorViewWithBGImageName:@"MainMenuBG" andDoorknobImageName:@"searchDoorKnob"]
-                    transitionStyle:SPCurtainTransitionHorizontal];
+                    transitionStyle:SPCurtainTransitionHorizontal];*/
+}
+
+#pragma mark -------------------视频播放结束委托--------------------
+
+/*
+ @method 当视频播放完毕释放对象
+ */
+-(void)myMovieFinishedCallback:(NSNotification*)notify
+{
+    //视频播放对象
+    MPMoviePlayerController* theMovie = [notify object];
+    //销毁播放通知
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:MPMoviePlayerPlaybackDidFinishNotification
+                                                  object:theMovie];
+    //[theMovie.view removeFromSuperview];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
