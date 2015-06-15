@@ -10,4 +10,6 @@
 
 @interface SPReadViewController : SPBaseViewController
 
+@property (weak, nonatomic) IBOutlet UIImageView *roundBtn;
+
 @end

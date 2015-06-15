@@ -62,7 +62,7 @@
     UIImageView *imageView1 = [[UIImageView alloc] initWithFrame:frame];
     [imageView1 setImage:[UIImage imageNamed:@"Stone"]];
     [view1 addSubview:imageView1];
-    imageView1.makeFrame(view1.frame).animate(1.f);
+    imageView1.makeFrame(view1.frame).animate(0.7f);
 }
 
 - (void)scaleTwo {

@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SPReadDetailViewController : SPBaseViewController
+@interface SPReadDetailViewController : UIViewController
 
+
+@property (weak, nonatomic) IBOutlet UIImageView *groundBG;
+
+@property (weak, nonatomic) IBOutlet UIScrollView *contentScroll;
+
+@property (weak, nonatomic) IBOutlet UIImageView *wordImageView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *wordsHeight;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *wordWidth;
 @end

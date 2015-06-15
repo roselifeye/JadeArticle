@@ -37,10 +37,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    NSUserDefaults *userdefaults = [NSUserDefaults standardUserDefaults];
-    //if (![userdefaults objectForKey:KEY_USER_DEFAULT]) {
     
-    //}
 }
 
 - (IBAction)leftMenu:(id)sender {
