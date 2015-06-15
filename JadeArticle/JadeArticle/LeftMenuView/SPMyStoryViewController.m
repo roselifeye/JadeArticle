@@ -42,6 +42,7 @@
     [self initFooterView];
     [self initStoryViewWithText:@"你妹" andTitle:@"HHHH" andAuthor:@"zzzz" andTime:@"2015" andTag:@"njshdkj"];
     [self initStoryViewWithText:@"你妹" andTitle:@"HHHH" andAuthor:@"zzzz" andTime:@"2015" andTag:@"njshdkj"];
+    [self initStoryViewWithText:@"你妹" andTitle:@"HHHH" andAuthor:@"zzzz" andTime:@"2015" andTag:@"njshdkj"];
     
     [myStoryScrollView setContentOffset:CGPointMake(0, myStoryScrollView.contentSize.height-myStoryScrollView.frame.size.height)];
 }

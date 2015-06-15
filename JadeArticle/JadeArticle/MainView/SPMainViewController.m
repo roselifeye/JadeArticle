@@ -15,6 +15,8 @@
 #import "SPFindViewController.h"
 #import "SPFoundViewController.h"
 
+#import "SPLauchViewController.h"
+
 @interface SPMainViewController () {
 }
 
@@ -28,6 +30,17 @@
     UIImage *bgImage = [UIImage imageNamed:@"MainMenuBG"];
     self.view.layer.contents = (id) bgImage.CGImage;
     [self.navigationController setNavigationBarHidden:YES];
+    
+    [SPLauchViewController show];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    NSUserDefaults *userdefaults = [NSUserDefaults standardUserDefaults];
+    //if (![userdefaults objectForKey:KEY_USER_DEFAULT]) {
+    
+    //}
 }
 
 - (IBAction)leftMenu:(id)sender {

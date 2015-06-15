@@ -4,6 +4,25 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
+        <!--Lauch View Controller-->
+        <scene sceneID="kIv-HT-xkI">
+            <objects>
+                <viewController restorationIdentifier="lauchView" storyboardIdentifier="lauchView" id="8Af-Ly-drM" customClass="SPLauchViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tgi-Fa-KKW"/>
+                        <viewControllerLayoutGuide type="bottom" id="dH0-BK-cKv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eSO-SL-jzh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wcx-99-H7P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4055" y="85"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
@@ -21,7 +40,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3555" y="85"/>
+            <point key="canvasLocation" x="-3305" y="85"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="e0Q-qC-4aM">
@@ -264,7 +283,7 @@
                                     <constraint firstAttribute="height" constant="2" id="LQ4-ng-9Uk"/>
                                 </constraints>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zvQ-Cq-7bD">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvQ-Cq-7bD">
                                 <rect key="frame" x="15" y="42" width="570" height="478"/>
                                 <animations/>
                             </scrollView>
@@ -2366,7 +2385,6 @@
         <!--Publish Detail View Controller-->
         <scene sceneID="L0k-U1-dFc">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bkK-dS-Qfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController restorationIdentifier="publishDetailView" storyboardIdentifier="publishDetailView" id="gvI-WF-Jwx" customClass="SPPublishDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mV0-zW-hta"/>
@@ -2395,6 +2413,7 @@
                         <outlet property="contentScroll" destination="IGJ-CU-xei" id="pFR-4J-x0K"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bkK-dS-Qfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3059" y="-3479"/>
         </scene>
