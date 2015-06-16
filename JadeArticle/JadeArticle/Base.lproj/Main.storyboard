@@ -650,6 +650,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="beginBtn" destination="lWF-rz-D2J" id="wtg-D1-6vG"/>
                         <outlet property="roundBtn" destination="cXc-Hy-WVa" id="TSn-hY-AVb"/>
                         <segue destination="HI4-kA-JVm" kind="custom" identifier="readDetailSegue" id="3Iy-pv-1ID"/>
                     </connections>
@@ -2362,13 +2363,29 @@
                                     <outlet property="delegate" destination="HI4-kA-JVm" id="Tc1-Lq-dTu"/>
                                 </connections>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNs-Ib-eMo">
+                                <rect key="frame" x="315" y="607" width="40" height="40"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="IhC-wS-1SX"/>
+                                    <constraint firstAttribute="width" constant="40" id="S9g-VH-vv3"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="starEndBtn">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goBack:" destination="HI4-kA-JVm" eventType="touchUpInside" id="RrH-Yb-FxX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="c55-nr-vgM" firstAttribute="leading" secondItem="bJW-4h-e8N" secondAttribute="leading" id="A4Y-3W-WQC"/>
+                            <constraint firstItem="jiq-KY-9tJ" firstAttribute="top" secondItem="JNs-Ib-eMo" secondAttribute="bottom" constant="20" id="JXx-7y-38x"/>
                             <constraint firstAttribute="centerX" secondItem="bJW-4h-e8N" secondAttribute="centerX" id="NN8-bP-yCx"/>
                             <constraint firstItem="c55-nr-vgM" firstAttribute="trailing" secondItem="bJW-4h-e8N" secondAttribute="trailing" id="Zq1-5q-A1O"/>
+                            <constraint firstAttribute="trailing" secondItem="JNs-Ib-eMo" secondAttribute="trailing" constant="20" id="axL-NK-PBd"/>
                             <constraint firstItem="c55-nr-vgM" firstAttribute="top" secondItem="bJW-4h-e8N" secondAttribute="top" id="eGa-SX-Anz"/>
                             <constraint firstItem="jiq-KY-9tJ" firstAttribute="top" secondItem="bJW-4h-e8N" secondAttribute="bottom" id="hS4-z5-pnn"/>
                             <constraint firstAttribute="centerX" secondItem="c55-nr-vgM" secondAttribute="centerX" id="ohh-xh-EgO"/>
@@ -2380,7 +2397,6 @@
                     <connections>
                         <outlet property="contentScroll" destination="bJW-4h-e8N" id="ZAk-UA-Y6O"/>
                         <outlet property="groundBG" destination="c55-nr-vgM" id="HSX-hN-j3c"/>
-                        <outlet property="wordImageView" destination="c55-nr-vgM" id="NF4-Wz-0vc"/>
                         <outlet property="wordWidth" destination="vbS-KB-Kgs" id="Wm0-5s-f5t"/>
                         <outlet property="wordsHeight" destination="5Tb-QV-yDW" id="CXo-wk-j7X"/>
                     </connections>
@@ -2438,6 +2454,7 @@
         <image name="reviewICON1" width="27" height="27"/>
         <image name="reviewICON3" width="27" height="27"/>
         <image name="reviewTime" width="9" height="9"/>
+        <image name="starEndBtn" width="40" height="40"/>
         <image name="storyCollectionBtn" width="41" height="41"/>
         <image name="storyCollectionBtn_highlighted" width="41" height="41"/>
         <image name="storyReviewBtn" width="41" height="41"/>

@@ -15,7 +15,6 @@
 
 @property (weak, nonatomic) IBOutlet UIScrollView *contentScroll;
 
-@property (weak, nonatomic) IBOutlet UIImageView *wordImageView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *wordsHeight;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *wordWidth;
 @end
